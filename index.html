@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prado Store | Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-moderno">
+        <div class="header-overlay"></div>
+        <div class="header-contenido">
+            <span class="header-sub">PREMIUM SNEAKERS</span>
+            <h1>PRADO STORE</h1>
+            <p class="header-desc">Catálogo Digital Disponible</p>
+            
+            <div class="header-info-envios">
+                <p class="texto-envios">📦 Hacemos envíos a todo el Perú por la agencia <span>SHALOM</span> o la de tu preferencia🔥.</p>
+                <p class="texto-confianza">SOMOS 100% CONFIABLES🔥​ | TRATO DIRECTO👌</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+        <aside class="filtros">
+            <h3>Filtrar Catálogo</h3>
+            
+            <div class="grupo-filtro">
+                <label for="buscar">Buscar modelo:</label>
+                <input type="text" id="buscar" placeholder="Ej. Jordan...">
+            </div>
+
+            <div class="grupo-filtro">
+                <label for="filtro-marca">Marca:</label>
+                <select id="filtro-marca">
+                    <option value="todos">Todas las marcas</option>
+                    <option value="Nike">Nike</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Puma">Puma</option>
+                    <option value="Anta">Anta</option>
+                    <option value="Li-Ning">Li-Ning</option>
+                    <option value="QiaoDan">QiaoDan</option>
+                </select>
+            </div>
+
+            <div class="grupo-filtro">
+                <label for="filtro-talla">Talla disponible:</label>
+                <select id="filtro-talla">
+                    <option value="todos">Todas las tallas</option>
+                    <option value="37.5">37.5</option>
+                    <option value="38.5">38.5</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="40.5">40.5</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="42.5">42.5</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="44.5">44.5</option>
+                    <option value="45">45</option>
+                </select>
+            </div>
+        </aside>
+
+        <section id="catalogo" class="grid-catalogo">
+        </section>
+
+        <div class="zona-ofertas-laterales">
+            
+            <div class="banner-oferta oferta-nuevo">
+                <div class="icono-alerta">🚨</div>
+                <div class="contenido-oferta">
+                    <h3>¡PRIMERA COMPRA!</h3>
+                    <p>¿Eres nuevo en Prado Store? Llévate un <b>10% DE DESCUENTO</b> inmediato en tu primer par seleccionado.</p>
+                    <span class="badge-oferta">Descuento del 10%</span>
+                </div>
+            </div>
+
+            <div class="banner-oferta oferta-habitual">
+                <div class="icono-alerta">💥</div>
+                <div class="contenido-oferta">
+                    <h3>CLIENTE HABITUAL</h3>
+                    <p>¿Ya nos compraste antes? Por tu fidelidad, obtén un <b>15% DE DESCUENTO</b> en tu siguiente par.</p>
+                    <span class="badge-oferta">Descuento del 15%</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+    <div id="miLightbox" style="display:none; position:fixed; z-index:999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;" onclick="this.style.display='none'">
+        <img id="imgGrande" src="" style="max-width:90%; max-height:80%; border:5px solid white;">
+    </div>
+</body>
+</html>
