@@ -59,7 +59,7 @@ function mostrarProductos(listaProductos) {
                 <p class="precio">S/. ${prod.precio.toFixed(2)}</p>
                 <a href="https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}" 
                    target="_blank" class="btn-whatsapp">
-                   Consultar por WhatsApp
+                    Consultar por WhatsApp
                 </a>
             </div>
         `;
@@ -88,6 +88,41 @@ function filtrarCatalogo() {
 document.getElementById('buscar').addEventListener('input', filtrarCatalogo);
 document.getElementById('filtro-marca').addEventListener('change', filtrarCatalogo);
 document.getElementById('filtro-talla').addEventListener('change', filtrarCatalogo);
+
+
+// =========================================================================
+// NUEVO: INTERACTIVIDAD DEL BOTÓN DE FILTROS EN DISPOSITIVOS MÓVILES
+// =========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const btnToggle = document.getElementById('btn-toggle-filtros');
+    const sidebarFiltros = document.getElementById('sidebar-filtros');
+
+    if (btnToggle && sidebarFiltros) {
+        // Función para abrir y cerrar el panel de filtros al presionar el botón
+        btnToggle.addEventListener('click', () => {
+            sidebarFiltros.classList.toggle('filtros-ocultos');
+            
+            if (sidebarFiltros.classList.contains('filtros-ocultos')) {
+                btnToggle.textContent = '🔍 Filtrar Catálogo';
+            } else {
+                btnToggle.textContent = '❌ Cerrar Filtros';
+            }
+        });
+
+        // Opcional y recomendado: Oculta automáticamente el menú de filtros en celular 
+        // después de que el cliente cambie una marca o talla para que vea los resultados al instante
+        const selectores = sidebarFiltros.querySelectorAll('select');
+        selectores.forEach(select => {
+            select.addEventListener('change', () => {
+                // Solo actúa si estamos en vista móvil (ancho de pantalla menor a 1024px)
+                if (window.innerWidth < 1024) {
+                    sidebarFiltros.classList.add('filtros-ocultos');
+                    btnToggle.textContent = '🔍 Filtrar Catálogo';
+                }
+            });
+        });
+    }
+});
 
 // Inicializar la app
 cargarProductos();

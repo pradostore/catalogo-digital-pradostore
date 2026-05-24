@@ -108,7 +108,6 @@ body {
     font-weight: 700;
 }
 
-/* El texto de confianza en verde seguridad solicitado */
 .texto-confianza {
     color: #00ec60; /* Verde neón sutil que transmite seguridad y legitimidad */
     font-size: 0.85rem !important;
@@ -119,17 +118,42 @@ body {
     text-shadow: 0 0 10px rgba(0, 236, 96, 0.2); /* Destello sutil de protección */
 }
 
+/* --- BOTÓN DE FILTROS EN CELULAR (NUEVO) --- */
+.btn-toggle-filtros {
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 500px;
+    background: #161616;
+    color: #fff;
+    border: 1px solid #ff4757;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1.5rem auto 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.15);
+    transition: all 0.3s ease;
+}
+
+.btn-toggle-filtros:hover {
+    background: #ff4757;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transform: translateY(-1px);
+}
+
 /* --- CONTENEDOR PRINCIPAL RESPONSIVO --- */
 .contenedor-principal {
     display: flex;
     flex-direction: column; /* Por defecto en móvil todo va vertical */
-    max-width: 1400px; /* Ampliamos un poco el margen máximo para dar espacio a los lados */
-    margin: 2rem auto;
-    gap: 2rem;
+    max-width: 1400px; 
+    margin: 1rem auto 2rem auto;
+    gap: 1.5rem;
     padding: 0 1rem;
 }
 
-/* --- FILTROS (Mantenemos tu base con toque oscuro) --- */
+/* --- FILTROS --- */
 .filtros {
     width: 100%; /* Ocupa todo en móvil */
     background: #161616;
@@ -138,6 +162,11 @@ body {
     height: fit-content;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     border: 1px solid #222;
+}
+
+/* Clase dinámica para ocultar/mostrar filtros en móvil */
+.filtros.filtros-ocultos {
+    display: none;
 }
 
 .filtros h3 { 
@@ -174,8 +203,9 @@ body {
 .grid-catalogo {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.5rem;
+    /* En móvil forzamos un grid limpio de 2 columnas exactas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
 }
 
 .tarjeta-zapato {
@@ -191,12 +221,12 @@ body {
 
 .etiqueta-nuevo {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     background: #ff4757;
     color: #fff;
-    padding: 4px 8px;
-    font-size: 0.75rem;
+    padding: 3px 6px;
+    font-size: 0.7rem;
     font-weight: bold;
     border-radius: 4px;
     z-index: 5;
@@ -204,49 +234,51 @@ body {
 
 .tarjeta-zapato img {
     width: 100%;
-    height: 250px;
+    height: 150px; /* Tamaño adaptado para que encajen dos por fila en cel */
     object-fit: contain;
-    background-color: #1e1e1e; /* Fondo un poco más claro para contrastar el calzado */
-    padding: 10px;
+    background-color: #1e1e1e; 
+    padding: 8px;
 }
 
+/* Ajustes de tipografía para las dos columnas en celular */
 .info-zapato {
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .info-zapato .marca {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    color: #ff4757; /* Color de marca a juego */
+    color: #ff4757; 
     font-weight: bold;
 }
 
 .info-zapato h2 {
-    font-size: 1.2rem;
-    margin: 0.3rem 0 0.5rem;
+    font-size: 0.95rem;
+    margin: 0.2rem 0 0.4rem;
     color: #fff;
+    line-height: 1.2;
 }
 
 .info-zapato .tallas {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #aaa;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .info-zapato .estado {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #888;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .info-zapato .precio {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     margin-top: auto;
 }
 
@@ -254,25 +286,23 @@ body {
 .btn-whatsapp {
     display: block;
     text-align: center;
-    /* Degradado azul eléctrico/marino sofisticado que combina excelente con el fondo oscuro */
     background: linear-gradient(135deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
-    color: #ffffff; /* Letras blancas puras para legibilidad perfecta */
-    padding: 0.8rem;
+    color: #ffffff; 
+    padding: 0.7rem;
     border-radius: 6px;
     text-decoration: none;
-    font-weight: 700; /* Texto en negrita bien marcado */
-    font-size: 0.95rem;
-    letter-spacing: 0.5px; /* Separación sutil elegante entre letras */
+    font-weight: 700; 
+    font-size: 0.85rem;
+    letter-spacing: 0.3px; 
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 4px 15px rgba(67, 100, 247, 0.2); /* Sutil aura azul en la base */
+    box-shadow: 0 4px 15px rgba(67, 100, 247, 0.2); 
     transition: all 0.3s ease;
 }
 
-/* Efecto al pasar el mouse por encima (Hover) o pulsar en el móvil */
 .btn-whatsapp:hover { 
-    background: linear-gradient(135deg, #4364f7 0%, #0052d4 100%); /* Invierte el degradado */
-    box-shadow: 0 6px 20px rgba(67, 100, 247, 0.45); /* El aura azul se intensifica */
-    transform: translateY(-2px); /* Eleva el botón sutilmente */
+    background: linear-gradient(135deg, #4364f7 0%, #0052d4 100%); 
+    box-shadow: 0 6px 20px rgba(67, 100, 247, 0.45); 
+    transform: translateY(-2px); 
 }
 
 .sin-stock { 
@@ -288,17 +318,18 @@ body {
 
 /* --- SECCIÓN LATERAL DE OFERTAS ALINEADAS --- */
 .zona-ofertas-laterales {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid; /* En móvil las ofertas se ponen lado a lado si hay espacio */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
     width: 100%;
     box-sizing: border-box;
+    order: -1; /* Hacemos que en móvil salten ARRIBA de las zapatillas automáticamente */
 }
 
 .banner-oferta {
     background: #161616;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -310,33 +341,30 @@ body {
     border-left: 5px solid #ff4757;
 }
 
-/* Base dinámica para los iconos de alerta que contienen los emojis */
 .icono-alerta {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     display: inline-block;
-    font-family: sans-serif; /* Mantiene la correcta renderización del emoji */
+    font-family: sans-serif; 
     animation: pulso 2s infinite ease-in-out;
 }
 
-/* --- CAMBIO DINÁMICO: PRIMERA COMPRA (OJOS 👀) --- */
 .oferta-nuevo .icono-alerta {
-    color: transparent; /* Oculta el emoji antiguo del HTML si lo hubiera */
-    text-shadow: 0 0 10px rgba(255, 71, 87, 0.4); /* Resplandor rojo neón */
+    color: transparent; 
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.4); 
 }
 
 .oferta-nuevo .icono-alerta::before {
     content: '👀';
-    color: #fff; /* Asegura visualización limpia */
+    color: #fff; 
 }
 
 .oferta-habitual {
     border-left: 5px solid #ffa502;
 }
 
-/* --- CAMBIO DINÁMICO: CLIENTE HABITUAL (FUEGO 🔥) --- */
 .oferta-habitual .icono-alerta {
-    color: transparent; /* Oculta el emoji antiguo del HTML si lo hubiera */
-    text-shadow: 0 0 10px rgba(255, 165, 2, 0.4); /* Resplandor naranja fuego neón */
+    color: transparent; 
+    text-shadow: 0 0 10px rgba(255, 165, 2, 0.4); 
 }
 
 .oferta-habitual .icono-alerta::before {
@@ -346,7 +374,7 @@ body {
 
 .contenido-oferta h3 {
     margin: 0 0 0.3rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 800;
 }
@@ -355,8 +383,8 @@ body {
 .oferta-habitual h3 { color: #ffa502; }
 
 .contenido-oferta p {
-    margin: 0 0 0.8rem 0;
-    font-size: 0.85rem;
+    margin: 0 0 0.6rem 0;
+    font-size: 0.8rem;
     color: #bbb;
     line-height: 1.4;
 }
@@ -366,26 +394,37 @@ body {
     background: rgba(255, 255, 255, 0.03);
     padding: 0.3rem 0.6rem;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: #fff;
     border: 1px dashed rgba(255,255,255,0.15);
 }
 
-/* --- ANIMACIÓN DE PULSO MEJORADA --- */
 @keyframes pulso {
     0% { transform: scale(1); }
-    50% { transform: scale(1.12); } /* Se agranda un toque más genial */
+    50% { transform: scale(1.12); } 
     100% { transform: scale(1); }
 }
 
-/* --- CONFIGURACIÓN PARA PANTALLAS GRANDES (PC / LAPTOP) --- */
+/* ==========================================================
+   CONFIGURACIÓN PARA PANTALLAS GRANDES (PC / LAPTOP / TABLET)
+   ========================================================== */
 @media (min-width: 1024px) {
+    .btn-toggle-filtros {
+        display: none; /* Desaparece el botón en PC ya que hay espacio */
+    }
+
+    .filtros.filtros-ocultos {
+        display: block !important; /* Muestra los filtros siempre en PC */
+    }
+
     .contenedor-principal {
         display: grid;
-        /* Define 3 columnas fijas: Filtros (250px) | Catálogo (Libre) | Ofertas (280px) */
+        /* Define 3 columnas fijas en PC: Filtros | Catálogo Libre | Ofertas */
         grid-template-columns: 250px 1fr 280px; 
         align-items: start;
+        margin: 2rem auto;
+        gap: 2rem;
     }
 
     .filtros {
@@ -394,9 +433,40 @@ body {
         top: 20px;
     }
 
+    .grid-catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .tarjeta-zapato img {
+        height: 250px; /* Imagen grande ideal para PC */
+        padding: 10px;
+    }
+
+    .info-zapato {
+        padding: 1rem;
+    }
+
+    .info-zapato h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-zapato .precio {
+        font-size: 1.3rem;
+    }
+
+    .btn-whatsapp {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
     .zona-ofertas-laterales {
+        display: flex;
+        flex-direction: column; /* Banners verticales a la derecha */
         width: 280px;
         position: sticky;
         top: 20px;
+        order: 0; /* Regresa a la derecha en PC */
+        gap: 1.5rem;
     }
 }
