@@ -43,6 +43,7 @@ function mostrarProductos(listaProductos) {
             else if (tallaEur === 44) { cm = "28 cm"; us = "10 US"; }
             else if (tallaEur === 44.5) { cm = "28.5 cm"; us = "10.5 US"; }
             else if (tallaEur === 45) { cm = "29 cm"; us = "11 US"; }
+            else if (tallaEur === 46) { cm = "30 cm"; us = "12 US"; }
             else { cm = "-- cm"; us = "-- US"; } // Por si pones una talla que no esté en la lista
 
             return `${tallaEur} EUR / ${cm} / ${us}`;
