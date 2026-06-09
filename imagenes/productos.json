@@ -1,0 +1,512 @@
+[
+  {
+    "id": "DV-051",
+    "modelo": "Kyrie 7 'Marfil Palido'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [44],
+    "imagen": "imagenes/kyriemarfil44.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-050",
+    "modelo": "Wade All City 10 'Test''",
+    "marca": "Li-Ning",
+    "precio": 120,
+    "tallas": [40],
+    "imagen": "imagenes/Wadeall10c40.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-049",
+    "modelo": "Kyrie Infinity 'Future Past'",
+    "marca": "Nike",
+    "precio": 140,
+    "tallas": [42.5],
+    "imagen": "imagenes/kyriefturwpast42medio.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-048",
+    "modelo": "Klay Thompson 7 'Course'",
+    "marca": "Anta",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/kt7couse43.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-047",
+    "modelo": "Kyrie Flytrap 3 'Bred'",
+    "marca": "Nike",
+    "precio": 110,
+    "tallas": [42],
+    "imagen": "imagenes/kyrieflyp3bred42.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-046",
+    "modelo": "LeBron XX",
+    "marca": "Nike",
+    "precio": 140,
+    "tallas": [44],
+    "imagen": "imagenes/lebro44mint.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-045",
+    "modelo": "Kobe 9 Elite Low Protro 'Moonwalker'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [44],
+    "imagen": "imagenes/kobeleitre9moon.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-044",
+    "modelo": "Curry Flow 9",
+    "marca": "Unde Armour",
+    "precio": 140,
+    "tallas": [44],
+    "imagen": "imagenes/curry944.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-043",
+    "modelo": "Kyrie Infinity 'Future Past'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/kyriecelesinfi.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-042",
+    "modelo": "Curry Flow 10",
+    "marca": "Unde Armour",
+    "precio": 130,
+    "tallas": [46],
+    "imagen": "imagenes/curry1046.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-041",
+    "modelo": "KD Trey 5 V 'University Red'",
+    "marca": "Nike",
+    "precio": 125,
+    "tallas": [42.5],
+    "imagen": "imagenes/kdtreyv.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-040",
+    "modelo": "LeBron Witness 3 'Bred'",
+    "marca": "Nike",
+    "precio": 120,
+    "tallas": [41],
+    "imagen": "imagenes/lebrowit3.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-039",
+    "modelo": "KD Trey 5 VII",
+    "marca": "Nike",
+    "precio": 120,
+    "tallas": [41],
+    "imagen": "imagenes/kdtreybacl.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-038",
+    "modelo": "Kyrie 7 'Año Nuevo Chino'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [42],
+    "imagen": "imagenes/kyrie7añonuevochin.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-037",
+    "modelo": "Kyrie 6 'Bred'",
+    "marca": "Nike",
+    "precio": 140,
+    "tallas": [44.5],
+    "imagen": "imagenes/kyriebred6.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-036",
+    "modelo": "Kobe 5 Protro '2K Gamer'",
+    "marca": "Nike",
+    "precio": 150,
+    "tallas": [42.5],
+    "imagen": "imagenes/kobe52kchamer.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-035",
+    "modelo": "Kobe 5 Protro 'Chaos'",
+    "marca": "Nike",
+    "precio": 150,
+    "tallas": [41],
+    "imagen": "imagenes/kone5chao.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-034",
+    "modelo": "Klay Thompson 9 'Christmas'",
+    "marca": "Anta",
+    "precio": 120,
+    "tallas": [42.5],
+    "imagen": "imagenes/kt9navi.jpg",
+    "nuevo": false,
+    "estado": "8.7/10"
+  },
+  {
+    "id": "DV-033",
+    "modelo": "Kobe 9 Protro 'Mambacita GiGi'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [43],
+    "imagen": "imagenes/kobe9elite.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-032",
+    "modelo": "Kobe 4 Protro 'Draft Day'",
+    "marca": "Nike",
+    "precio": 165,
+    "tallas": [45],
+    "imagen": "imagenes/kobe4draftd.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-031",
+    "modelo": "Kyrie Infinity 'Amethyst Wave'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/kyrieamtensy.jpg",
+    "nuevo": false,
+    "estado": "8.5/10"
+  },
+  {
+    "id": "DV-030",
+    "modelo": "LeBron XX",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/lebron20purypink.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-029",
+    "modelo": "Sonic 5 'High Top Blue'",
+    "marca": "Li-Ning",
+    "precio": 100,
+    "tallas": [42],
+    "imagen": "imagenes/sonic5galaxi.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-028",
+    "modelo": "Flash Lou Williams 3",
+    "marca": "Peak",
+    "precio": 100,
+    "tallas": [42],
+    "imagen": "imagenes/louwili3.jpg",
+    "nuevo": false,
+    "estado": "9.6/10"
+  },
+  {
+    "id": "DV-027",
+    "modelo": "Kobe 4 Protro 'Mambacita GiGi'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [43],
+    "imagen": "imagenes/kobe4manbacitag.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-026",
+    "modelo": "Shock Wave 5",
+    "marca": "Anta",
+    "precio": 110,
+    "tallas": [38.5],
+    "imagen": "imagenes/shockwa5.jpg",
+    "nuevo": false,
+    "estado": "9.7/10"
+  },
+  {
+    "id": "DV-025",
+    "modelo": "Kyrie Infinity 'Fire and Ice'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [40],
+    "imagen": "imagenes/infinitfire.jpg",
+    "nuevo": false,
+    "estado": ""
+  },
+  {
+    "id": "DV-024",
+    "modelo": "kyrie 5 low ",
+    "marca": "Nike",
+    "precio": 110,
+    "tallas": [43],
+    "imagen": "imagenes/kyrie5locel.jpg",
+    "nuevo": false,
+    "estado": "8/10"
+  },
+  {
+    "id": "DV-023",
+    "modelo": "Air Max Impact 3",
+    "marca": "Nike",
+    "precio": 100,
+    "tallas": [42],
+    "imagen": "imagenes/airmaxtri.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-022",
+    "modelo": "LeBron XXII",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/lebron22plat.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-021",
+    "modelo": "Kobe 4 Protro 'Philly'",
+    "marca": "Nike",
+    "precio": 150,
+    "tallas": [44],
+    "imagen": "imagenes/kobe4phlly.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-020",
+    "modelo": "Kobe 5 Protro '2K Gamer'",
+    "marca": "Nike",
+    "precio": 150,
+    "tallas": [43, 44],
+    "imagen": "imagenes/kobe2kgamer.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-019",
+    "modelo": "Kyrie Flytrap 4 'White'",
+    "marca": "Nike",
+    "precio": 115,
+    "tallas": [44],
+    "imagen": "imagenes/kyriefly4wite.jpg",
+    "nuevo": false,
+    "estado": "8.5/10"
+  },
+  {
+    "id": "DV-018",
+    "modelo": "Kyrie Infinity 'Fire and Ice'",
+    "marca": "Nike",
+    "precio": 110,
+    "tallas": [45],
+    "imagen": "imagenes/kyriefirice.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-017",
+    "modelo": "D'Rose Son of Chi",
+    "marca": "Adidas",
+    "precio": 100,
+    "tallas": [44],
+    "imagen": "imagenes/drosesonofchi.jpg",
+    "nuevo": false,
+    "estado": "8.8/10"
+  },
+  {
+    "id": "DV-016",
+    "modelo": "Kobe Mamba Focus'",
+    "marca": "Nike",
+    "precio": 90,
+    "tallas": [43],
+    "imagen": "imagenes/kobemamsol.jpg",
+    "nuevo": false,
+    "estado": "8/10"
+  },
+  {
+    "id": "DV-015",
+    "modelo": "Kyrie Flytrap 4 'Crimson Pulse'",
+    "marca": "Nike",
+    "precio": 110,
+    "tallas": [40],
+    "imagen": "imagenes/kyriefly4mango.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-014",
+    "modelo": "Ja Morant 1 'Day One'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [44],
+    "imagen": "imagenes/ja1day44.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-013",
+    "modelo": "Kyrie Flytrap 3 'South Beach'",
+    "marca": "Nike",
+    "precio": 115,
+    "tallas": [43],
+    "imagen": "imagenes/kyriefly3sou.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-012",
+    "modelo": "Kobe Mamba Focus 'Metallic Gold'",
+    "marca": "Nike",
+    "precio": 85,
+    "tallas": [45],
+    "imagen": "imagenes/kobewhimam.jpg",
+    "nuevo": false,
+    "estado": "7/10"
+  },
+  {
+    "id": "DV-011",
+    "modelo": "Scoot Zeros",
+    "marca": "Puma",
+    "precio": 100,
+    "tallas": [43],
+    "imagen": "imagenes/scootzerog.jpg",
+    "nuevo": false,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-010",
+    "modelo": "D'Rose 10 ",
+    "marca": "Adidas",
+    "precio": 95,
+    "tallas": [41],
+    "imagen": "imagenes/drose10na.jpg",
+    "nuevo": false,
+    "estado": "8.5/10"
+  },
+  {
+    "id": "DV-009",
+    "modelo": "Speed Team Anti Slip",
+    "marca": "Li-Ning",
+    "precio": 90,
+    "tallas": [43],
+    "imagen": "imagenes/speedteamanti.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-008",
+    "modelo": "Yushuai 15 'White Blue'",
+    "marca": "Li-Ning",
+    "precio": 90,
+    "tallas": [43],
+    "imagen": "imagenes/yushuai15b.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-007",
+    "modelo": "LeBron 14 Low 'Light Bone'",
+    "marca": "Nike",
+    "precio": 115,
+    "tallas": [44],
+    "imagen": "imagenes/lebron14low.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-006",
+    "modelo": "Kyrie 6 'Mom - Red'",
+    "marca": "Nike",
+    "precio": 100,
+    "tallas": [39],
+    "imagen": "imagenes/kyriemom6.jpg",
+    "nuevo": false,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-005",
+    "modelo": "D'Rose 10 'Metallic Gold'",
+    "marca": "Adidas",
+    "precio": 90,
+    "tallas": [43],
+    "imagen": "imagenes/rose10gold.jpg",
+    "nuevo": false,
+    "estado": "8/10"
+  },
+  {
+    "id": "DV-004",
+    "modelo": "D'Rose 10 ",
+    "marca": "Adidas",
+    "precio": 90,
+    "tallas": [41],
+    "imagen": "imagenes/drose10na.jpg",
+    "nuevo": false,
+    "estado": "8.5/10"
+  },
+  {
+    "id": "DV-003",
+    "modelo": "Jordan Superfly 4 'Bordeaux'",
+    "marca": "Nike",
+    "precio": 60,
+    "tallas": [44],
+    "imagen": "imagenes/jordansuperfly4.jpg",
+    "nuevo": false,
+    "estado": "7/10"
+  },
+  {
+    "id": "DV-002",
+    "modelo": "Harden Vol 2",
+    "marca": "Adidas",
+    "precio": 75,
+    "tallas": [41],
+    "imagen": "imagenes/hardenvol2.jpg",
+    "nuevo": false,
+    "estado": "7/10"
+  },
+  {
+    "id": "DV-001",
+    "modelo": "Jordan XXXII 'Russ'",
+    "marca": "Nike",
+    "precio": 70,
+    "tallas": [37.5],
+    "imagen": "imagenes/jordan32.jpg",
+    "nuevo": false,
+    "estado": "8.5/10"
+  }
+]
