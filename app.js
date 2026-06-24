@@ -32,6 +32,7 @@ function mostrarProductos(listaProductos) {
 
             // Tabla de conversión para calzado de básquet / urbano
             if (tallaEur === 37.5) { cm = "23.5 cm"; us = "5Y / 6.5W"; }
+            else if (tallaEur === 38) { cm = "24 cm"; us = "6 US"; }
             else if (tallaEur === 38.5) { cm = "24 cm"; us = "6 US"; }
             else if (tallaEur === 39) { cm = "24.5 cm"; us = "6.5 US"; }
             else if (tallaEur === 40) { cm = "25 cm"; us = "7 US"; }

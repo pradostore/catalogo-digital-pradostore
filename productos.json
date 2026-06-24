@@ -1,76 +1,136 @@
 [
   {
-    "id": "DV-054",
-    "modelo": "Shock Wave 5 Pro x Kyrie Irving 'Dallas'",
-    "marca": "Anta",
-    "precio": 200,
-    "tallas": [43],
-    "imagen": "imagenes/shockirvin43.jpg",
+    "id": "DV-058",
+    "modelo": "Kobe 4 Protro 'Mambacita GiGi'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [40],
+    "imagen": "imagenes/kobe4mambacita40.jpg",
     "nuevo": true,
-    "estado": "9.5/10"
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-057",
+    "modelo": "Kobe 5 Protro '2K Gamer'",
+    "marca": "Nike",
+    "precio": 155,
+    "tallas": [44],
+    "imagen": "imagenes/kobe2k44new.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-056",
+    "modelo": "Kevin Durand 14 'Home'",
+    "marca": "Nike",
+    "precio": 150,
+    "tallas": [42.5],
+    "imagen": "imagenes/kdhome425.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-055",
+    "modelo": "Ja Morant 2 'Twelve Time'",
+    "marca": "Nike",
+    "precio": 160,
+    "tallas": [43],
+    "imagen": "imagenes/ja2time43.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-054",
+    "modelo": "Zoom Freak 5 'Keep it A Buck'",
+    "marca": "Nike",
+    "precio": 145,
+    "tallas": [43],
+    "imagen": "imagenes/freak543buck.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
   },
   {
     "id": "DV-053",
-    "modelo": "LeBron Soldier 14 'Black White'",
-    "marca": "Nike",
-    "precio": 170,
+    "modelo": "Curry 4 Flotro 'Vivid Lila'",
+    "marca": "Unde Armour",
+    "precio": 150,
     "tallas": [43],
-    "imagen": "imagenes/lebron14blwhi.jpg",
+    "imagen": "imagenes/cuurry4flotro43.jpg",
     "nuevo": true,
     "estado": "9.8/10"
   },
   {
     "id": "DV-052",
-    "modelo": "Harden Vol.7 'Black White'",
-    "marca": "Adidas",
-    "precio": 150,
+    "modelo": "Curry 5 'Champion Pack'",
+    "marca": "Unde Armour",
+    "precio": 130,
     "tallas": [43],
-    "imagen": "imagenes/hardenvol743.jpg",
+    "imagen": "imagenes/curry5cahmpack43.jpg",
     "nuevo": true,
     "estado": "9.5/10"
   },
   {
     "id": "DV-051",
-    "modelo": "KyBrid S2 'What The'",
-    "marca": "Nike",
-    "precio": 130,
-    "tallas": [42.5],
-    "imagen": "imagenes/kybrid2swhat.jpg",
-    "nuevo": true,
-    "estado": "8/10"
-  },
-  {
-    "id": "DV-050",
-    "modelo": "Kobe AD NXT FF 'Vast Grey'",
-    "marca": "Nike",
-    "precio": 145,
-    "tallas": [42],
-    "imagen": "imagenes/kobeadnexxff42.jpg",
+    "modelo": "BadFive 2 Low 'Rice White Multi' ",
+    "marca": "Li-Ning",
+    "precio": 110,
+    "tallas": [44],
+    "imagen": "imagenes/badfive44multi.jpg",
     "nuevo": true,
     "estado": "9/10"
   },
   {
-    "id": "DV-049",
-    "modelo": "Speed 9 Ultra 'Christmas'",
+    "id": "DV-050",
+    "modelo": "Children Pioneer Team 5",
     "marca": "Li-Ning",
-    "precio": 150,
-    "tallas": [43],
-    "imagen": "imagenes/speed9ultra43.jpg",
+    "precio": 95,
+    "tallas": [38],
+    "imagen": "imagenes/linigpione38.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-049",
+    "modelo": "Kobe 4 Protro 'Philly'",
+    "marca": "Nike",
+    "precio": 155,
+    "tallas": [44],
+    "imagen": "imagenes/4protro2philly44.jpg",
     "nuevo": true,
     "estado": "9.8/10"
   },
   {
     "id": "DV-048",
-    "modelo": "Harde StepBack 2",
-    "marca": "Adidas",
-    "precio": 115,
-    "tallas": [42],
-    "imagen": "imagenes/hadenstep242.jpg",
-    "nuevo": true,
-    "estado": "9/10"
+    "modelo": "LeBron Soldier 14 'Black White'",
+    "marca": "Nike",
+    "precio": 170,
+    "tallas": [43],
+    "imagen": "imagenes/lebron14blwhi.jpg",
+    "nuevo": false,
+    "estado": "9.8/10"
   },
   {
     "id": "DV-047",
+    "modelo": "KyBrid S2 'What The'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42.5],
+    "imagen": "imagenes/kybrid2swhat.jpg",
+    "nuevo": false,
+    "estado": "8/10"
+  },
+  {
+    "id": "DV-046",
+    "modelo": "Kobe AD NXT FF 'Vast Grey'",
+    "marca": "Nike",
+    "precio": 145,
+    "tallas": [42],
+    "imagen": "imagenes/kobeadnexxff42.jpg",
+    "nuevo": false,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-045",
     "modelo": "Way of Wade All Day 4 'Black White'",
     "marca": "Li-Ning",
     "precio": 115,
@@ -80,7 +140,7 @@
     "estado": "9/10"
   },
   {
-    "id": "DV-046",
+    "id": "DV-044",
     "modelo": "Kyrie 7 'Marfil Palido'",
     "marca": "Nike",
     "precio": 170,
@@ -90,7 +150,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-045",
+    "id": "DV-043",
     "modelo": "Wade All City 10 'Test''",
     "marca": "Li-Ning",
     "precio": 120,
@@ -100,7 +160,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-044",
+    "id": "DV-042",
     "modelo": "Kyrie Infinity 'Future Past'",
     "marca": "Nike",
     "precio": 140,
@@ -110,7 +170,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-043",
+    "id": "DV-041",
     "modelo": "Kyrie Flytrap 3 'Bred'",
     "marca": "Nike",
     "precio": 110,
@@ -120,7 +180,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-042",
+    "id": "DV-040",
     "modelo": "LeBron XX",
     "marca": "Nike",
     "precio": 140,
@@ -130,7 +190,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-041",
+    "id": "DV-039",
     "modelo": "Kobe 9 Elite Low Protro 'Moonwalker'",
     "marca": "Nike",
     "precio": 170,
@@ -140,7 +200,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-040",
+    "id": "DV-038",
     "modelo": "Curry Flow 9",
     "marca": "Unde Armour",
     "precio": 140,
@@ -150,7 +210,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-039",
+    "id": "DV-037",
     "modelo": "Kyrie Infinity 'Future Past'",
     "marca": "Nike",
     "precio": 130,
@@ -160,7 +220,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-038",
+    "id": "DV-036",
     "modelo": "Curry Flow 10",
     "marca": "Unde Armour",
     "precio": 130,
@@ -170,7 +230,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-037",
+    "id": "DV-035",
     "modelo": "KD Trey 5 V 'University Red'",
     "marca": "Nike",
     "precio": 125,
@@ -180,7 +240,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-036",
+    "id": "DV-034",
     "modelo": "LeBron Witness 3 'Bred'",
     "marca": "Nike",
     "precio": 120,
@@ -190,7 +250,7 @@
     "estado": "9/10"
   },
   {
-    "id": "DV-035",
+    "id": "DV-033",
     "modelo": "KD Trey 5 VII",
     "marca": "Nike",
     "precio": 120,
@@ -200,7 +260,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-034",
+    "id": "DV-032",
     "modelo": "Kobe 5 Protro 'Chaos'",
     "marca": "Nike",
     "precio": 150,
@@ -210,7 +270,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-033",
+    "id": "DV-031",
     "modelo": "Klay Thompson 9 'Christmas'",
     "marca": "Anta",
     "precio": 120,
@@ -220,7 +280,7 @@
     "estado": "8.7/10"
   },
   {
-    "id": "DV-032",
+    "id": "DV-030",
     "modelo": "Kobe 9 Protro 'Mambacita GiGi'",
     "marca": "Nike",
     "precio": 170,
@@ -230,7 +290,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-031",
+    "id": "DV-029",
     "modelo": "Kobe 4 Protro 'Draft Day'",
     "marca": "Nike",
     "precio": 165,
@@ -240,7 +300,7 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-030",
+    "id": "DV-028",
     "modelo": "Kyrie Infinity 'Amethyst Wave'",
     "marca": "Nike",
     "precio": 130,
@@ -250,17 +310,7 @@
     "estado": "8.5/10"
   },
   {
-    "id": "DV-029",
-    "modelo": "LeBron XX",
-    "marca": "Nike",
-    "precio": 130,
-    "tallas": [42],
-    "imagen": "imagenes/lebron20purypink.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
-  },
-  {
-    "id": "DV-028",
+    "id": "DV-027",
     "modelo": "Sonic 5 'High Top Blue'",
     "marca": "Li-Ning",
     "precio": 100,
@@ -270,7 +320,7 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-027",
+    "id": "DV-026",
     "modelo": "Flash Lou Williams 3",
     "marca": "Peak",
     "precio": 100,
@@ -278,16 +328,6 @@
     "imagen": "imagenes/louwili3.jpg",
     "nuevo": false,
     "estado": "9.6/10"
-  },
-  {
-    "id": "DV-026",
-    "modelo": "Kobe 4 Protro 'Mambacita GiGi'",
-    "marca": "Nike",
-    "precio": 175,
-    "tallas": [43],
-    "imagen": "imagenes/kobe4manbacitag.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
   },
   {
     "id": "DV-025",
