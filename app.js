@@ -5,19 +5,21 @@ async function cargarProductos() {
     try {
         const respuesta = await fetch('productos.json');
         productos = await respuesta.json();
-        mostrarProductos(productos); // Muestra todos al iniciar
+        
+        // Separamos y mostramos ambas secciones al iniciar
+        procesarYMostrarCatalogos(productos); 
     } catch (error) {
         console.error("Error al cargar el catálogo:", error);
     }
 }
 
-// 2. Función para dibujar las zapatillas en el HTML
-function mostrarProductos(listaProductos) {
-    const contenedor = document.getElementById('catalogo');
+// Función centralizada para renderizar productos en un contenedor específico
+function renderizarLista(listaProductos, idContenedor, esPedido = false) {
+    const contenedor = document.getElementById(idContenedor);
     contenedor.innerHTML = ''; // Limpiar contenedor
 
     if (listaProductos.length === 0) {
-        contenedor.innerHTML = `<p class="sin-stock">No se encontraron modelos con esos filtros.</p>`;
+        contenedor.innerHTML = `<p class="sin-stock">No se encontraron modelos disponibles.</p>`;
         return;
     }
 
@@ -30,7 +32,6 @@ function mostrarProductos(listaProductos) {
             let cm = "";
             let us = "";
 
-            // Tabla de conversión para calzado de básquet / urbano
             if (tallaEur === 37.5) { cm = "23.5 cm"; us = "5Y / 6.5W"; }
             else if (tallaEur === 38) { cm = "24 cm"; us = "6 US"; }
             else if (tallaEur === 38.5) { cm = "24 cm"; us = "6 US"; }
@@ -45,10 +46,18 @@ function mostrarProductos(listaProductos) {
             else if (tallaEur === 44.5) { cm = "28.5 cm"; us = "10.5 US"; }
             else if (tallaEur === 45) { cm = "29 cm"; us = "11 US"; }
             else if (tallaEur === 46) { cm = "30 cm"; us = "12 US"; }
-            else { cm = "-- cm"; us = "-- US"; } // Por si pones una talla que no esté en la lista
+            else { cm = "-- cm"; us = "-- US"; }
 
             return `${tallaEur} EUR / ${cm} / ${us}`;
-        }).join('<br>'); // Separa con un salto de línea si la zapatilla tiene varias tallas
+        }).join('<br>'); 
+
+        // Mensaje de WhatsApp personalizado según sea stock o bajo pedido
+        let enlaceWhatsApp = "";
+        if (esPedido) {
+            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20encargar%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20(Código:%20${prod.id})`;
+        } else {
+            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}`;
+        }
 
         tarjeta.innerHTML = `
             ${prod.nuevo ? '<span class="etiqueta-nuevo">Nuevo Ingreso 🔥</span>' : ''}
@@ -59,9 +68,8 @@ function mostrarProductos(listaProductos) {
                 <p class="tallas" style="line-height: 1.4;"><b>Tallas disponibles:</b><br>${listaTallasConvertidas}</p>
                 <p class="estado"><b>Estado:</b> ${prod.estado || 'No especificado'}</p>
                 <p class="precio">S/. ${prod.precio.toFixed(2)}</p>
-                <a href="https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}" 
-                   target="_blank" class="btn-whatsapp">
-                    Consultar por WhatsApp
+                <a href="${enlaceWhatsApp}" target="_blank" class="btn-whatsapp">
+                    ${esPedido ? 'Consultar Encargo' : 'Consultar por WhatsApp'}
                 </a>
             </div>
         `;
@@ -69,13 +77,25 @@ function mostrarProductos(listaProductos) {
     });
 }
 
-// 3. Lógica de los Filtros combinados
+// 2. Función para dividir los productos entre los de stock normal y los de pedido
+function procesarYMostrarCatalogos(lista) {
+    // Filtramos los de stock (puedes identificar los de pedido con una propiedad como prod.tipo === 'pedido')
+    const stockNormal = lista.filter(prod => prod.tipo !== 'pedido');
+    const bajoPedido = lista.filter(prod => prod.tipo === 'pedido');
+
+    renderizarLista(stockNormal, 'catalogo', false);
+    renderizarLista(bajoPedido, 'catalogo-pedido', true);
+}
+
+// 3. Lógica de los Filtros combinados (Aplica solo al catálogo principal de stock)
 function filtrarCatalogo() {
     const busqueda = document.getElementById('buscar').value.toLowerCase();
     const marcaSeleccionada = document.getElementById('filtro-marca').value;
     const tallaSeleccionada = document.getElementById('filtro-talla').value;
 
-    const productosFiltrados = productos.filter(prod => {
+    const stockNormal = productos.filter(prod => prod.tipo !== 'pedido');
+
+    const productosFiltrados = stockNormal.filter(prod => {
         const cumpleBusqueda = prod.modelo.toLowerCase().includes(busqueda);
         const cumpleMarca = marcaSeleccionada === 'todos' || prod.marca === marcaSeleccionada;
         const cumpleTalla = tallaSeleccionada === 'todos' || prod.tallas.includes(parseFloat(tallaSeleccionada));
@@ -83,7 +103,7 @@ function filtrarCatalogo() {
         return cumpleBusqueda && cumpleMarca && cumpleTalla;
     });
 
-    mostrarProductos(productosFiltrados);
+    renderizarLista(productosFiltrados, 'catalogo', false);
 }
 
 // Escuchar los eventos del usuario para filtrar al instante
@@ -100,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebarFiltros = document.getElementById('sidebar-filtros');
 
     if (btnToggle && sidebarFiltros) {
-        // Función para abrir y cerrar el panel de filtros al presionar el botón
         btnToggle.addEventListener('click', () => {
             sidebarFiltros.classList.toggle('filtros-ocultos');
             
@@ -111,12 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Opcional y recomendado: Oculta automáticamente el menú de filtros en celular 
-        // después de que el cliente cambie una marca o talla para que vea los resultados al instante
         const selectores = sidebarFiltros.querySelectorAll('select');
         selectores.forEach(select => {
             select.addEventListener('change', () => {
-                // Solo actúa si estamos en vista móvil (ancho de pantalla menor a 1024px)
                 if (window.innerWidth < 1024) {
                     sidebarFiltros.classList.add('filtros-ocultos');
                     btnToggle.textContent = '🔍 Filtrar Catálogo';
@@ -125,6 +141,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// =========================================================================
+// FUNCIÓN PARA ALTERNAR ENTRE VISTA DE STOCK Y ZONA BAJO PEDIDO
+// =========================================================================
+function alternarSeccion(vista) {
+    const vDisponibles = document.getElementById('vista-disponibles');
+    const vPedido = document.getElementById('vista-pedido');
+    const sidebar = document.getElementById('sidebar-filtros');
+    const btnFiltros = document.getElementById('btn-toggle-filtros');
+    
+    if (vista === 'pedido') {
+        vDisponibles.classList.remove('seccion-activa');
+        vDisponibles.classList.add('seccion-oculta');
+        
+        vPedido.classList.remove('seccion-oculta');
+        vPedido.classList.add('seccion-activa');
+
+        // Ocultar filtros de stock ya que estamos en la sección de encargos
+        if (sidebar) sidebar.style.display = 'none';
+        if (btnFiltros) btnFiltros.style.display = 'none';
+    } else {
+        vPedido.classList.remove('seccion-activa');
+        vPedido.classList.add('seccion-oculta');
+        
+        vDisponibles.classList.remove('seccion-oculta');
+        vDisponibles.classList.add('seccion-activa');
+
+        // Mostrar filtros de nuevo
+        if (sidebar) sidebar.style.display = '';
+        if (btnFiltros) btnFiltros.style.display = '';
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 // Inicializar la app
 cargarProductos();

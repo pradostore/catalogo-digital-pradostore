@@ -70,15 +70,44 @@
             </div>
         </aside>
 
-        <section id="catalogo" class="grid-catalogo">
-        </section>
+        <!-- CONTENEDOR DE VISTAS (CATÁLOGO NORMAL O BAJO PEDIDO) -->
+        <div class="contenedor-vistas-principal" style="flex: 1;">
+            
+            <!-- VISTA 1: Stock Disponible (Tu catálogo de siempre) -->
+            <div id="vista-disponibles" class="seccion-activa">
+                <section id="catalogo" class="grid-catalogo">
+                </section>
+            </div>
+
+            <!-- VISTA 2: Zona Bajo Pedido (Se abrirá al hacer clic en el banner) -->
+            <div id="vista-pedido" class="seccion-oculta">
+                <div class="cabecera-seccion-pedido">
+                    <div>
+                        <h2 style="color: #fff; font-size: 1.2rem;">📦 Zapatillas Bajo Pedido (Encargos)</h2>
+                        <p style="color: #aaa; font-size: 0.85rem; margin-top: 0.2rem;">Modelos exclusivos traídos por encargo directo. Consulta disponibilidad y plazos.</p>
+                    </div>
+                    <button class="btn-volver-stock" onclick="alternarSeccion('disponibles')">Volver a Stock</button>
+                </div>
+                <section id="catalogo-pedido" class="grid-catalogo">
+                    <!-- Aquí cargaremos los pares bajo pedido con su propio botón -->
+                </section>
+            </div>
+
+        </div>
 
         <div class="zona-ofertas-laterales">
-            <!-- Nuevo Banner TikTok -->
+            <!-- Banner TikTok -->
             <div class="banner-tiktok">
                 <h3>🚀 ¡META: 1,000 SEGUIDORES!</h3>
                 <p>Ayúdanos a crecer en TikTok y desbloquea una sorpresa especial para todos. ¡Falta muy poco!</p>
                 <a href="https://www.tiktok.com/@prado_store_0?_r=1&_t=ZS-984B445tObd" class="btn-tiktok" target="_blank">Ir al perfil de TikTok</a>
+            </div>
+
+            <!-- Nuevo Banner Lateral para Bajo Pedido -->
+            <div class="banner-bajo-pedido">
+                <h3>📦 ENCARGOS A PEDIDO</h3>
+                <p>¿Buscas un modelo que no está en stock? Traemos pedidos personalizados directamente para ti.</p>
+                <button class="btn-cambiar-vista" onclick="alternarSeccion('pedido')">Ver Catálogo Bajo Pedido</button>
             </div>
         </div>
     </main>
