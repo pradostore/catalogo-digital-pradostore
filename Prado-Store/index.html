@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prado Store | Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-moderno">
+        <div class="header-overlay"></div>
+        <div class="header-contenido">
+            <span class="header-sub">PREMIUM SNEAKERS</span>
+            <h1>PRADO STORE</h1>
+            <p class="header-desc">Catálogo Digital Disponible</p>
+            
+            <div class="header-info-envios">
+                <p class="texto-envios">📦 Hacemos envíos a todo el Perú por la agencia <span>SHALOM</span> o la de tu preferencia🔥.</p>
+                <p class="texto-confianza">SOMOS 100% CONFIABLES🔥​ | TRATO DIRECTO👌</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR DE BOTONES SUPERIORES (FILTRAR Y OFERTAS DIRECTAS) -->
+    <div class="contenedor-botones-superiores">
+        <button id="btn-toggle-filtros" class="btn-superior btn-filtrar">🔍 Filtrar Catálogo</button>
+        <button id="btn-filtro-ofertas" class="btn-superior btn-ofertas" onclick="filtrarSoloOfertas()">🔥 Ofertas / Promociones</button>
+    </div>
+
+    <main class="contenedor-principal">
+        
+        <aside id="sidebar-filtros" class="filtros filtros-ocultos">
+            <h3>Filtrar Catálogo</h3>
+            
+            <div class="grupo-filtro">
+                <label for="buscar">Buscar modelo:</label>
+                <input type="text" id="buscar" placeholder="Ej. Jordan...">
+            </div>
+
+            <!-- NUEVO FILTRO PARA OFERTAS / DESCUENTOS -->
+            <div class="grupo-filtro">
+                <label for="filtro-oferta">Promociones:</label>
+                <select id="filtro-oferta">
+                    <option value="todos">Todos los productos</option>
+                    <option value="ofertas">🔥 Solo Ofertas / Liquidación</option>
+                </select>
+            </div>
+
+            <div class="grupo-filtro">
+                <label for="filtro-marca">Marca:</label>
+                <select id="filtro-marca">
+                    <option value="todos">Todas las marcas</option>
+                    <option value="Nike">Nike</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Puma">Puma</option>
+                    <option value="Under Armour">Under Armour</option>
+                    <option value="Anta">Anta</option>
+                    <option value="361°">361°</option>
+                    <option value="Li-Ning">Li-Ning</option>
+                    <option value="QiaoDan">QiaoDan</option>
+                </select>
+            </div>
+
+            <div class="grupo-filtro">
+                <label for="filtro-talla">Talla disponible:</label>
+                <select id="filtro-talla">
+                    <option value="todos">Todas las tallas</option>
+                    <option value="37.5">37.5</option>
+                    <option value="38">38</option>
+                    <option value="38.5">38.5</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="40.5">40.5</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="42.5">42.5</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="44.5">44.5</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- CONTENEDOR DE VISTAS (CATÁLOGO NORMAL O BAJO PEDIDO) -->
+        <div class="contenedor-vistas-principal" style="flex: 1;">
+            
+            <!-- VISTA 1: Stock Disponible (Tu catálogo de siempre) -->
+            <div id="vista-disponibles" class="seccion-activa">
+                <section id="catalogo" class="grid-catalogo">
+                </section>
+            </div>
+
+            <!-- VISTA 2: Zona Bajo Pedido (Se abrirá al hacer clic en el banner) -->
+            <div id="vista-pedido" class="seccion-oculta">
+                <div class="cabecera-seccion-pedido">
+                    <div>
+                        <h2 style="color: #fff; font-size: 1.2rem;">📦 Zapatillas Bajo Pedido (Encargos)</h2>
+                        <p style="color: #aaa; font-size: 0.85rem; margin-top: 0.2rem;">Modelos exclusivos traídos por encargo directo. Consulta disponibilidad y plazos.</p>
+                    </div>
+                    <button class="btn-volver-stock" onclick="alternarSeccion('disponibles')">Volver a Stock</button>
+                </div>
+                <section id="catalogo-pedido" class="grid-catalogo">
+                    <!-- Aquí cargaremos los pares bajo pedido con su propio botón -->
+                </section>
+            </div>
+
+        </div>
+
+        <div class="zona-ofertas-laterales">
+            <!-- Banner TikTok -->
+            <div class="banner-tiktok">
+                <h3>🚀 ¡META: 1,000 SEGUIDORES!</h3>
+                <p>Ayúdanos a crecer en TikTok y desbloquea una sorpresa especial para todos. ¡Falta muy poco!</p>
+                <a href="https://www.tiktok.com/@prado_store_0?_r=1&_t=ZS-984B445tObd" class="btn-tiktok" target="_blank">Ir al perfil de TikTok</a>
+            </div>
+
+            <!-- Nuevo Banner Lateral para Bajo Pedido -->
+            <div class="banner-bajo-pedido">
+                <h3>📦 ENCARGOS A PEDIDO</h3>
+                <p>¿Buscas un modelo que no está en stock? Traemos pedidos personalizados directamente para ti.</p>
+                <button class="btn-cambiar-vista" onclick="alternarSeccion('pedido')">Ver Catálogo Bajo Pedido</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+    <div id="miLightbox" style="display:none; position:fixed; z-index:999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;" onclick="this.style.display='none'">
+        <img id="imgGrande" src="" style="max-width:90%; max-height:80%; border:5px solid white;">
+    </div>
+</body>
+</html>
