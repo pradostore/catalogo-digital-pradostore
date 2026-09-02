@@ -1,4 +1,5 @@
 let productos = [];
+let soloOfertasActivo = false; // Estado global para el botón superior de ofertas
 
 // 1. Cargar los datos desde el archivo JSON
 async function cargarProductos() {
@@ -16,10 +17,12 @@ async function cargarProductos() {
 // Función centralizada para renderizar productos en un contenedor específico
 function renderizarLista(listaProductos, idContenedor, esPedido = false) {
     const contenedor = document.getElementById(idContenedor);
+    if (!contenedor) return;
+    
     contenedor.innerHTML = ''; // Limpiar contenedor
 
     if (listaProductos.length === 0) {
-        contenedor.innerHTML = `<p class="sin-stock">No se encontraron modelos disponibles.</p>`;
+        contenedor.innerHTML = `<p class="sin-stock" style="color: #aaa; text-align: center; grid-column: 1/-1; padding: 2rem 0;">No se encontraron modelos disponibles.</p>`;
         return;
     }
 
@@ -59,15 +62,34 @@ function renderizarLista(listaProductos, idContenedor, esPedido = false) {
             enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}`;
         }
 
+        // --- LÓGICA DE DESCUENTO ---
+        const tieneOferta = prod.precioAnterior && Number(prod.precioAnterior) > Number(prod.precio);
+        let bloquePrecioHTML = '';
+        let etiquetaOfertaHTML = '';
+
+        if (tieneOferta) {
+            const porcentaje = Math.round(((prod.precioAnterior - prod.precio) / prod.precioAnterior) * 100);
+            etiquetaOfertaHTML = `<span class="etiqueta-descuento">-${porcentaje}% OFF</span>`;
+            bloquePrecioHTML = `
+                <div class="contenedor-precio-oferta">
+                    <span class="precio-antes">Antes: S/. ${Number(prod.precioAnterior).toFixed(2)}</span>
+                    <span class="precio-ahora">Ahora: S/. ${Number(prod.precio).toFixed(2)}</span>
+                </div>
+            `;
+        } else {
+            bloquePrecioHTML = `<p class="precio">S/. ${Number(prod.precio).toFixed(2)}</p>`;
+        }
+
         tarjeta.innerHTML = `
             ${prod.nuevo ? '<span class="etiqueta-nuevo">Nuevo Ingreso 🔥</span>' : ''}
+            ${etiquetaOfertaHTML}
             <img src="${prod.imagen}" alt="${prod.modelo}" style="cursor:pointer;" onclick="document.getElementById('imgGrande').src='${prod.imagen}'; document.getElementById('miLightbox').style.display='flex';">
             <div class="info-zapato">
                 <span class="marca">${prod.marca}</span>
                 <h2>${prod.modelo}</h2>
                 <p class="tallas" style="line-height: 1.4;"><b>Tallas disponibles:</b><br>${listaTallasConvertidas}</p>
                 <p class="estado"><b>Estado:</b> ${prod.estado || 'No especificado'}</p>
-                <p class="precio">S/. ${prod.precio.toFixed(2)}</p>
+                ${bloquePrecioHTML}
                 <a href="${enlaceWhatsApp}" target="_blank" class="btn-whatsapp">
                     ${esPedido ? 'Consultar Encargo' : 'Consultar por WhatsApp'}
                 </a>
@@ -77,9 +99,8 @@ function renderizarLista(listaProductos, idContenedor, esPedido = false) {
     });
 }
 
-// 2. Función para dividir los productos entre los de stock normal y los de pedido
+// 2. Función para dividir los productos entre stock normal y pedidos
 function procesarYMostrarCatalogos(lista) {
-    // Filtramos los de stock (puedes identificar los de pedido con una propiedad como prod.tipo === 'pedido')
     const stockNormal = lista.filter(prod => prod.tipo !== 'pedido');
     const bajoPedido = lista.filter(prod => prod.tipo === 'pedido');
 
@@ -87,11 +108,12 @@ function procesarYMostrarCatalogos(lista) {
     renderizarLista(bajoPedido, 'catalogo-pedido', true);
 }
 
-// 3. Lógica de los Filtros combinados (Aplica solo al catálogo principal de stock)
+// 3. Lógica de Filtros combinados (Aplica al catálogo principal de stock)
 function filtrarCatalogo() {
-    const busqueda = document.getElementById('buscar').value.toLowerCase();
-    const marcaSeleccionada = document.getElementById('filtro-marca').value;
-    const tallaSeleccionada = document.getElementById('filtro-talla').value;
+    const busqueda = document.getElementById('buscar')?.value.toLowerCase() || '';
+    const marcaSeleccionada = document.getElementById('filtro-marca')?.value || 'todos';
+    const tallaSeleccionada = document.getElementById('filtro-talla')?.value || 'todos';
+    const ofertaSeleccionada = document.getElementById('filtro-oferta')?.value || 'todos';
 
     const stockNormal = productos.filter(prod => prod.tipo !== 'pedido');
 
@@ -100,20 +122,44 @@ function filtrarCatalogo() {
         const cumpleMarca = marcaSeleccionada === 'todos' || prod.marca === marcaSeleccionada;
         const cumpleTalla = tallaSeleccionada === 'todos' || prod.tallas.includes(parseFloat(tallaSeleccionada));
 
-        return cumpleBusqueda && cumpleMarca && cumpleTalla;
+        // Filtro de ofertas (combina tanto el menú desplegable como el botón rápido)
+        const tieneDescuento = prod.precioAnterior && Number(prod.precioAnterior) > Number(prod.precio);
+        const cumpleOfertaMenu = ofertaSeleccionada === 'todos' || (ofertaSeleccionada === 'ofertas' && tieneDescuento);
+        const cumpleOfertaBoton = !soloOfertasActivo || tieneDescuento;
+
+        return cumpleBusqueda && cumpleMarca && cumpleTalla && cumpleOfertaMenu && cumpleOfertaBoton;
     });
 
     renderizarLista(productosFiltrados, 'catalogo', false);
 }
 
-// Escuchar los eventos del usuario para filtrar al instante
-document.getElementById('buscar').addEventListener('input', filtrarCatalogo);
-document.getElementById('filtro-marca').addEventListener('change', filtrarCatalogo);
-document.getElementById('filtro-talla').addEventListener('change', filtrarCatalogo);
+// 4. Función de activación/desactivación rápida por botón directo de Ofertas
+function filtrarSoloOfertas() {
+    const btnOfertas = document.getElementById('btn-filtro-ofertas');
+    
+    soloOfertasActivo = !soloOfertasActivo;
 
+    if (btnOfertas) {
+        if (soloOfertasActivo) {
+            btnOfertas.style.border = "2px solid #ffffff";
+            btnOfertas.innerText = "✖ Ver Todo el Catálogo";
+        } else {
+            btnOfertas.style.border = "1px solid #ff1744";
+            btnOfertas.innerText = "🔥 Ofertas / Liquidación";
+        }
+    }
+
+    filtrarCatalogo();
+}
+
+// Escuchar los eventos de los filtros laterales
+document.getElementById('buscar')?.addEventListener('input', filtrarCatalogo);
+document.getElementById('filtro-marca')?.addEventListener('change', filtrarCatalogo);
+document.getElementById('filtro-talla')?.addEventListener('change', filtrarCatalogo);
+document.getElementById('filtro-oferta')?.addEventListener('change', filtrarCatalogo);
 
 // =========================================================================
-// NUEVO: INTERACTIVIDAD DEL BOTÓN DE FILTROS EN DISPOSITIVOS MÓVILES
+// INTERACTIVIDAD DEL BOTÓN DE FILTROS EN DISPOSITIVOS MÓVILES
 // =========================================================================
 document.addEventListener('DOMContentLoaded', () => {
     const btnToggle = document.getElementById('btn-toggle-filtros');
@@ -149,7 +195,7 @@ function alternarSeccion(vista) {
     const vDisponibles = document.getElementById('vista-disponibles');
     const vPedido = document.getElementById('vista-pedido');
     const sidebar = document.getElementById('sidebar-filtros');
-    const btnFiltros = document.getElementById('btn-toggle-filtros');
+    const contenedorBotones = document.querySelector('.contenedor-botones-superiores');
     
     if (vista === 'pedido') {
         vDisponibles.classList.remove('seccion-activa');
@@ -158,9 +204,9 @@ function alternarSeccion(vista) {
         vPedido.classList.remove('seccion-oculta');
         vPedido.classList.add('seccion-activa');
 
-        // Ocultar filtros de stock ya que estamos en la sección de encargos
+        // Ocultar filtros de stock al estar en encargos
         if (sidebar) sidebar.style.display = 'none';
-        if (btnFiltros) btnFiltros.style.display = 'none';
+        if (contenedorBotones) contenedorBotones.style.display = 'none';
     } else {
         vPedido.classList.remove('seccion-activa');
         vPedido.classList.add('seccion-oculta');
@@ -168,9 +214,9 @@ function alternarSeccion(vista) {
         vDisponibles.classList.remove('seccion-oculta');
         vDisponibles.classList.add('seccion-activa');
 
-        // Mostrar filtros de nuevo
+        // Restablecer vista de filtros
         if (sidebar) sidebar.style.display = '';
-        if (btnFiltros) btnFiltros.style.display = '';
+        if (contenedorBotones) contenedorBotones.style.display = '';
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }

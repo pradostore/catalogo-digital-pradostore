@@ -21,7 +21,11 @@
         </div>
     </header>
 
-    <button id="btn-toggle-filtros" class="btn-toggle-filtros">🔍 Filtrar Catálogo</button>
+    <!-- CONTENEDOR DE BOTONES SUPERIORES (FILTRAR Y OFERTAS DIRECTAS) -->
+    <div class="contenedor-botones-superiores">
+        <button id="btn-toggle-filtros" class="btn-superior btn-filtrar">🔍 Filtrar Catálogo</button>
+        <button id="btn-filtro-ofertas" class="btn-superior btn-ofertas" onclick="filtrarSoloOfertas()">🔥 Ofertas / Promociones</button>
+    </div>
 
     <main class="contenedor-principal">
         
@@ -31,6 +35,15 @@
             <div class="grupo-filtro">
                 <label for="buscar">Buscar modelo:</label>
                 <input type="text" id="buscar" placeholder="Ej. Jordan...">
+            </div>
+
+            <!-- NUEVO FILTRO PARA OFERTAS / DESCUENTOS -->
+            <div class="grupo-filtro">
+                <label for="filtro-oferta">Promociones:</label>
+                <select id="filtro-oferta">
+                    <option value="todos">Todos los productos</option>
+                    <option value="ofertas">🔥 Solo Ofertas / Liquidación</option>
+                </select>
             </div>
 
             <div class="grupo-filtro">
