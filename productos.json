@@ -1,13 +1,103 @@
 [
   {
-    "id": "DV-088",
-    "modelo": "Way of Wade 11 'Overtown'",
+    "id": "DV-087",
+    "modelo": "Curry 1 Splash Party",
+    "marca": "Under Armour",
+    "precio": 0,
+    "tallas": [43],
+    "imagen": "imagenes/curry1splash43.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kobe 8 'Triple White",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/kobe8trilpewhitetalla43.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Fire and Ice'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/kyriefireNDICE43.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Future Past'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42.5],
+    "imagen": "imagenes/kyriefuturepas42y5ultimo.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Siren Red'",
+    "marca": "Nike",
+    "precio": 120,
+    "tallas": [44],
+    "imagen": "imagenes/kyrieinfinitysirenred44.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie 7 'Custom'",
+    "marca": "Nike",
+    "precio": 120,
+    "tallas": [39],
+    "imagen": "imagenes/kyrie7custom39.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Sonic 9 Team Low 'White Prism Pink'",
+    "marca": "Li-Ning",
+    "precio": 100,
+    "tallas": [42.5],
+    "imagen": "imagenes/sonic9tail42.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Air Jordan 35 DNA",
+    "marca": "Nike",
+    "precio": 100,
+    "tallas": [42],
+    "imagen": "imagenes/jordan35dna42.jpg",
+    "nuevo": true,
+    "estado": "8.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Future Past'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/kyrieinfyorigen42.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Jie Ao 'Angel'",
     "marca": "Li-Ning",
     "precio": 95,
-    "tallas": [46],
-    "imagen": "imagenes/wow11talla46.jpg",
+    "tallas": [40],
+    "imagen": "imagenes/jieao3940.jpg",
     "nuevo": true,
-    "estado": "8/10"
+    "estado": "9/10"
   },
   {
     "id": "DV-087",
@@ -16,18 +106,8 @@
     "precio": 130,
     "tallas": [43],
     "imagen": "imagenes/kyrie4anochino43.jpg",
-    "nuevo": true,
+    "nuevo":false,
     "estado": "9/10"
-  },
-  {
-    "id": "DV-086",
-    "modelo": "Jordan Luka 2 'Trick Shot'",
-    "marca": "Nike",
-    "precio": 130,
-    "tallas": [42],
-    "imagen": "imagenes/luka242trck.jpg",
-    "nuevo": true,
-    "estado": "9.5/10"
   },
   {
     "id": "DV-085",
@@ -36,7 +116,7 @@
     "precio": 120,
     "tallas": [42.5],
     "imagen": "imagenes/kevin11still42medio.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -46,7 +126,7 @@
     "precio": 130,
     "tallas": [44],
     "imagen": "imagenes/kyrieinfininyc44.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.7/10"
   },
   {
@@ -56,7 +136,7 @@
     "precio": 120,
     "tallas": [41],
     "imagen": "imagenes/kyriflytbeach41.jpg",
-    "nuevo":  true,
+    "nuevo":  false,
     "estado": "9.7/10"
   },
   {
@@ -161,17 +241,6 @@
     "estado": "9.9/10"
   },
   {
-    "id": "DV-068",
-    "modelo": "Ja Morant 3 'Lunar New Year'",
-    "marca": "Nike",
-    "precio": 215,
-    "precioAnterior":230,
-    "tallas": [41],
-    "imagen": "imagenes/ja3newyear41.jpg",
-    "nuevo": false,
-    "estado": "9.9/10"
-  },
-  {
     "id": "DV-067",
     "modelo": "Giannis Immortality 3 'Smoothie' ",
     "marca": "Nike",
@@ -179,28 +248,6 @@
     "precioAnterior":160,
     "tallas": [44],
     "imagen": "imagenes/giannis3soti44.jpg",
-    "nuevo": false,
-    "estado": "9.9/10"
-  },
-  {
-    "id": "DV-066",
-    "modelo": "Kyrie 7 NBA 'Final rings'",
-    "marca": "Nike",
-    "precio": 150,
-    "precioAnterior":165,
-    "tallas": [42],
-    "imagen": "imagenes/kyrie7whiteblack42.jpg",
-    "nuevo": false,
-    "estado": "9.7/10"
-  },
-  {
-    "id": "DV-065",
-    "modelo": "Kobe 4 Protro 'Girl Dad'",
-    "marca": "Nike",
-    "precio": 165,
-    "precioAnterior":175,
-    "tallas": [43],
-    "imagen": "imagenes/kobe4dad43.jpg",
     "nuevo": false,
     "estado": "9.9/10"
   },
@@ -457,28 +504,6 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-038",
-    "modelo": "Curry 4 Flotro 'Vivid Lila'",
-    "marca": "Under Armour",
-    "precio": 125,
-    "precioAnterior":150,
-    "tallas": [43],
-    "imagen": "imagenes/cuurry4flotro43.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
-  },
-  {
-    "id": "DV-037",
-    "modelo": "BadFive 2 Low 'Rice White Multi' ",
-    "marca": "Li-Ning",
-    "precio": 90,
-    "precioAnterior":115,
-    "tallas": [44],
-    "imagen": "imagenes/badfive44multi.jpg",
-    "nuevo": false,
-    "estado": "9/10"
-  },
-  {
     "id": "DV-036",
     "modelo": "Children Pioneer Team 5",
     "marca": "Li-Ning",
@@ -486,17 +511,6 @@
     "precioAnterior":95,
     "tallas": [38],
     "imagen": "imagenes/linigpione38.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
-  },
-  {
-    "id": "DV-035",
-    "modelo": "LeBron Soldier 14 'Black White'",
-    "marca": "Nike",
-    "precio": 150,
-    "precioAnterior":170,
-    "tallas": [43],
-    "imagen": "imagenes/lebron14blwhi.jpg",
     "nuevo": false,
     "estado": "9.8/10"
   },
@@ -541,17 +555,6 @@
     "precioAnterior":120,
     "tallas": [40],
     "imagen": "imagenes/Wadeall10c40.jpg",
-    "nuevo": false,
-    "estado": "9.5/10"
-  },
-  {
-    "id": "DV-030",
-    "modelo": "Kyrie Flytrap 3 'Bred'",
-    "marca": "Nike",
-    "precio": 90,
-    "precioAnterior":110,
-    "tallas": [42],
-    "imagen": "imagenes/kyrieflyp3bred42.jpg",
     "nuevo": false,
     "estado": "9.5/10"
   },
@@ -807,17 +810,6 @@
     "imagen": "imagenes/drose10na.jpg",
     "nuevo": false,
     "estado": "8.5/10"
-  },
-  {
-    "id": "DV-006",
-    "modelo": "Speed Team Anti Slip",
-    "marca": "Li-Ning",
-    "precio": 80,
-    "precioAnterior":100,
-    "tallas": [43],
-    "imagen": "imagenes/speedteamanti.jpg",
-    "nuevo": false,
-    "estado": "9.5/10"
   },
   {
     "id": "DV-005",
