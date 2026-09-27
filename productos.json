@@ -1,24 +1,99 @@
 [
   {
     "id": "DV-087",
-    "modelo": "Curry 1 Splash Party",
-    "marca": "Under Armour",
+    "modelo": "Kyrie 5 'Bob Esponja'",
+    "marca": "Nike",
     "precio": 0,
     "tallas": [43],
-    "imagen": "imagenes/curry1splash43.jpg",
+    "imagen": "imagenes/kyriebobsponja43joya.jpg",
     "nuevo": true,
-    "estado": "9.9/10"
+    "estado": "9/10"
   },
   {
     "id": "DV-087",
-    "modelo": "Kobe 8 'Triple White",
+    "modelo": "Kobe 8 System 'Philippines'",
+    "marca": "Nike",
+    "precio": 0,
+    "tallas": [42],
+    "imagen": "imagenes/kobe8detail42.jpg",
+    "nuevo": true,
+    "estado": "9/10",
+    "tieneDetalle": true
+  },
+  {
+    "id": "DV-087",
+    "modelo": "LeBron 14 'Lakers'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [40.5],
+    "imagen": "imagenes/lebron40ymediolakers.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Low 5 'Dominoes'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/kyrie5lowdomines.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Chinese New Year (2022)'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [44],
+    "imagen": "imagenes/kyrieinfinite260944.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Amethyst Wave'",
     "marca": "Nike",
     "precio": 130,
     "tallas": [43],
-    "imagen": "imagenes/kobe8trilpewhitetalla43.jpg",
+    "imagen": "imagenes/kyrieantencymasconser43.jpg",
     "nuevo": true,
-    "estado": "9.9/10"
+    "estado": "9.5/10"
   },
+  {
+    "id": "DV-087",
+    "modelo": "Harden vol.3 'Supernova'",
+    "marca": "Adidas",
+    "precio": 120,
+    "tallas": [43],
+    "imagen": "imagenes/hardenvol34313.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Jordan One Take 5 'Anthracite Taxi'",
+    "marca": "Nike",
+    "precio": 120,
+    "tallas": [43],
+    "imagen": "imagenes/jordan5take43.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+{
+    "id": "DV-087",
+    "modelo": "Kyrie 5 'Have a Nike Day'",
+    "marca": "Nike",
+    "precio": 90, 
+    "tallas": [43],
+    "imagen": "imagenes/kyrie5detailanikea43.jpg",
+    "nuevo": true,
+    "estado": "9/10",
+    "tieneDetalle": true
+  },
+
+
+
   {
     "id": "DV-087",
     "modelo": "Kyrie Infinity 'Fire and Ice'",
@@ -26,7 +101,7 @@
     "precio": 130,
     "tallas": [43],
     "imagen": "imagenes/kyriefireNDICE43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -36,27 +111,7 @@
     "precio": 130,
     "tallas": [42.5],
     "imagen": "imagenes/kyriefuturepas42y5ultimo.jpg",
-    "nuevo": true,
-    "estado": "9.5/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Kyrie Infinity 'Siren Red'",
-    "marca": "Nike",
-    "precio": 120,
-    "tallas": [44],
-    "imagen": "imagenes/kyrieinfinitysirenred44.jpg",
-    "nuevo": true,
-    "estado": "9.5/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Kyrie 7 'Custom'",
-    "marca": "Nike",
-    "precio": 120,
-    "tallas": [39],
-    "imagen": "imagenes/kyrie7custom39.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -66,7 +121,7 @@
     "precio": 100,
     "tallas": [42.5],
     "imagen": "imagenes/sonic9tail42.jpg",
-    "nuevo": true,
+    "nuevo":false,
     "estado": "9.5/10"
   },
   {
@@ -76,7 +131,7 @@
     "precio": 100,
     "tallas": [42],
     "imagen": "imagenes/jordan35dna42.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "8.5/10"
   },
   {
@@ -86,7 +141,7 @@
     "precio": 130,
     "tallas": [42],
     "imagen": "imagenes/kyrieinfyorigen42.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -96,7 +151,7 @@
     "precio": 95,
     "tallas": [40],
     "imagen": "imagenes/jieao3940.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -361,17 +416,6 @@
     "estado": "9.9/10"
   },
   {
-    "id": "DV-053",
-    "modelo": "Kyrie 5 'Calamardo'",
-    "marca": "Nike",
-    "precio": 145,
-    "precioAnterior":165,
-    "tallas": [42.5],
-    "imagen": "imagenes/kyriecalamador42medio.jpg",
-    "nuevo": false,
-    "estado": "9.7/10"
-  },
-  {
     "id": "DV-052",
     "modelo": "Kyrie Infinity 'Future Past'",
     "marca": "Nike",
@@ -548,17 +592,6 @@
     "estado": "9.8/10"
   },
   {
-    "id": "DV-031",
-    "modelo": "Wade All City 10 'Test'",
-    "marca": "Li-Ning",
-    "precio": 100,
-    "precioAnterior":120,
-    "tallas": [40],
-    "imagen": "imagenes/Wadeall10c40.jpg",
-    "nuevo": false,
-    "estado": "9.5/10"
-  },
-  {
     "id": "DV-029",
     "modelo": "LeBron XX",
     "marca": "Nike",
@@ -601,17 +634,6 @@
     "imagen": "imagenes/lebrowit3.jpg",
     "nuevo": false,
     "estado": "9/10"
-  },
-  {
-    "id": "DV-025",
-    "modelo": "Kobe 5 Protro 'Chaos'",
-    "marca": "Nike",
-    "precio": 140,
-    "precioAnterior":155,
-    "tallas": [41],
-    "imagen": "imagenes/kone5chao.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
   },
   {
     "id": "DV-024",

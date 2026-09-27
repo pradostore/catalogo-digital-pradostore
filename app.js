@@ -56,28 +56,43 @@ function renderizarLista(listaProductos, idContenedor, esPedido = false) {
 
         // Mensaje de WhatsApp personalizado según sea stock o bajo pedido
         let enlaceWhatsApp = "";
+        let textoDetalleWs = prod.tieneDetalle ? "%20(Tiene%20detalle)" : "";
+
         if (esPedido) {
-            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20encargar%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20(Código:%20${prod.id})`;
+            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20encargar%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20(Código:%20${prod.id})${textoDetalleWs}`;
         } else {
-            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}`;
+            enlaceWhatsApp = `https://wa.me/51913716006?text=Hola,%20estoy%20interesado%20en%20el%20modelo%20${encodeURIComponent(prod.modelo)}%20en%20código%20${prod.id}${textoDetalleWs}`;
         }
 
-        // --- LÓGICA DE DESCUENTO ---
-        const tieneOferta = prod.precioAnterior && Number(prod.precioAnterior) > Number(prod.precio);
+        // --- LÓGICA DE DESCUENTO Y MANEJO DE PRECIO EN 0 O TEXTO "DM" ---
+        const esTextoDM = typeof prod.precio === 'string' && prod.precio.toUpperCase() === 'DM';
+        const numPrecio = Number(prod.precio) || 0;
+        const numPrecioAnterior = Number(prod.precioAnterior) || 0;
+        const tieneOferta = numPrecioAnterior > numPrecio && numPrecio > 0 && !esTextoDM;
+        
         let bloquePrecioHTML = '';
         let etiquetaOfertaHTML = '';
 
-        if (tieneOferta) {
-            const porcentaje = Math.round(((prod.precioAnterior - prod.precio) / prod.precioAnterior) * 100);
+        if (numPrecio === 0 || esTextoDM) {
+            // Muestra "AL INTERNO" si el precio en el JSON es 0 o la cadena "DM"
+            bloquePrecioHTML = `<p class="precio precio-dm">AL INTERNO</p>`;
+        } else if (tieneOferta) {
+            const porcentaje = Math.round(((numPrecioAnterior - numPrecio) / numPrecioAnterior) * 100);
             etiquetaOfertaHTML = `<span class="etiqueta-descuento">-${porcentaje}% OFF</span>`;
             bloquePrecioHTML = `
                 <div class="contenedor-precio-oferta">
-                    <span class="precio-antes">Antes: S/. ${Number(prod.precioAnterior).toFixed(2)}</span>
-                    <span class="precio-ahora">Ahora: S/. ${Number(prod.precio).toFixed(2)}</span>
+                    <span class="precio-antes">Antes: S/. ${numPrecioAnterior.toFixed(2)}</span>
+                    <span class="precio-ahora">Ahora: S/. ${numPrecio.toFixed(2)}</span>
                 </div>
             `;
         } else {
-            bloquePrecioHTML = `<p class="precio">S/. ${Number(prod.precio).toFixed(2)}</p>`;
+            bloquePrecioHTML = `<p class="precio">S/. ${numPrecio.toFixed(2)}</p>`;
+        }
+
+        // --- LÓGICA DE TEXTO DE DETALLE DEBAJO DE ESTADO ---
+        let bloqueDetalleHTML = '';
+        if (prod.tieneDetalle) {
+            bloqueDetalleHTML = `<p class="texto-detalle" style="color: #ffffff; font-weight: bold; margin-top: 2px;">Detalle</p>`;
         }
 
         tarjeta.innerHTML = `
@@ -89,6 +104,7 @@ function renderizarLista(listaProductos, idContenedor, esPedido = false) {
                 <h2>${prod.modelo}</h2>
                 <p class="tallas" style="line-height: 1.4;"><b>Tallas disponibles:</b><br>${listaTallasConvertidas}</p>
                 <p class="estado"><b>Estado:</b> ${prod.estado || 'No especificado'}</p>
+                ${bloqueDetalleHTML}
                 ${bloquePrecioHTML}
                 <a href="${enlaceWhatsApp}" target="_blank" class="btn-whatsapp">
                     ${esPedido ? 'Consultar Encargo' : 'Consultar por WhatsApp'}
@@ -122,8 +138,12 @@ function filtrarCatalogo() {
         const cumpleMarca = marcaSeleccionada === 'todos' || prod.marca === marcaSeleccionada;
         const cumpleTalla = tallaSeleccionada === 'todos' || prod.tallas.includes(parseFloat(tallaSeleccionada));
 
-        // Filtro de ofertas (combina tanto el menú desplegable como el botón rápido)
-        const tieneDescuento = prod.precioAnterior && Number(prod.precioAnterior) > Number(prod.precio);
+        // Filtro de ofertas (valida que tenga oferta y que el precio no sea 0 o "DM")
+        const esTextoDM = typeof prod.precio === 'string' && prod.precio.toUpperCase() === 'DM';
+        const numPrecio = Number(prod.precio) || 0;
+        const numPrecioAnterior = Number(prod.precioAnterior) || 0;
+        const tieneDescuento = numPrecioAnterior > numPrecio && numPrecio > 0 && !esTextoDM;
+
         const cumpleOfertaMenu = ofertaSeleccionada === 'todos' || (ofertaSeleccionada === 'ofertas' && tieneDescuento);
         const cumpleOfertaBoton = !soloOfertasActivo || tieneDescuento;
 
