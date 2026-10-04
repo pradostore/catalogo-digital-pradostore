@@ -1,25 +1,66 @@
 [
   {
     "id": "DV-087",
-    "modelo": "Kyrie 5 'Bob Esponja'",
+    "modelo": "Ja Morant 3  'Spooky Season'",
     "marca": "Nike",
     "precio": 0,
     "tallas": [43],
-    "imagen": "imagenes/kyriebobsponja43joya.jpg",
+    "imagen": "imagenes/ja3spkyzombiegreen43.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Mother Nature & Father Time'",
+    "marca": "Nike",
+    "precio": 140,
+    "tallas": [42.5],
+    "imagen": "imagenes/kyrieinfinitytail42ymediofloral.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Way of Wade All City 11 'Sunrise'",
+    "marca": "Li-Ning",
+    "precio": 115,
+    "tallas": [39],
+    "imagen": "imagenes/wayofwadeall11tail39.jpg",
     "nuevo": true,
     "estado": "9/10"
   },
   {
     "id": "DV-087",
-    "modelo": "Kobe 8 System 'Philippines'",
+    "modelo": "Ja Morant 3  'Hustle & Flow'",
     "marca": "Nike",
     "precio": 0,
     "tallas": [42],
-    "imagen": "imagenes/kobe8detail42.jpg",
+    "imagen": "imagenes/ja3doblecolor42.jpg",
     "nuevo": true,
-    "estado": "9/10",
-    "tieneDetalle": true
+    "estado": "9.9/10"
   },
+  {
+    "id": "DV-087",
+    "modelo": "Curry 12 'What The Bay'",
+    "marca": "Under Armour",
+    "precio": 135,
+    "tallas": [42],
+    "imagen": "imagenes/curry12tail42doblel.jpg",
+    "nuevo": true,
+    "estado": "9.7/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kevin Durand Trey 5 X 'Light Orewood Brown'",
+    "marca": "Nike",
+    "precio": 125,
+    "tallas": [40],
+    "imagen": "imagenes/kdtrex5tail40.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+
+
   {
     "id": "DV-087",
     "modelo": "LeBron 14 'Lakers'",
@@ -91,9 +132,6 @@
     "estado": "9/10",
     "tieneDetalle": true
   },
-
-
-
   {
     "id": "DV-087",
     "modelo": "Kyrie Infinity 'Fire and Ice'",
@@ -438,17 +476,6 @@
     "estado": "9.5/10"
   },
   {
-    "id": "DV-050",
-    "modelo": "Way of Wade 808 2 'Energy'",
-    "marca": "Li-Ning",
-    "precio": 130,
-    "precioAnterior":150,
-    "tallas": [43],
-    "imagen": "imagenes/wow80843.jpg",
-    "nuevo": false,
-    "estado": "9/10"
-  },
-  {
     "id": "DV-049",
     "modelo": "Kyrie Flytrap 2 'Hyper Pink'",
     "marca": "Nike",
@@ -745,17 +772,7 @@
     "nuevo": false,
     "estado": "9/10"
   },
-  {
-    "id": "DV-014",
-    "modelo": "D'Rose Son of Chi",
-    "marca": "Adidas",
-    "precio": 90,
-    "precioAnterior":120,
-    "tallas": [44],
-    "imagen": "imagenes/drosesonofchi.jpg",
-    "nuevo": false,
-    "estado": "8.8/10"
-  },
+
   {
     "id": "DV-013",
     "modelo": "Kobe Mamba Focus'",
@@ -878,17 +895,6 @@
     "estado": "8.5/10"
   },
   {
-    "id": "DV-001",
-    "modelo": "Kobe AD",
-    "marca": "Nike",
-    "precio": 80,
-    "precioAnterior":100,
-    "tallas": [44],
-    "imagen": "imagenes/kobe_ad.jpg",
-    "nuevo": false,
-    "estado": "8/10"
-  },
-  {
     "id": "P000",
     "marca": "Nike",
     "modelo": "PEDIDO PERSONALIZO",
@@ -897,115 +903,6 @@
     "precio": 0,
     "imagen": "imagenes/pedidoperso.jpg",
     "tipo": "pedido"
-  },
-  {
-    "id": "P001",
-    "marca": "Nike",
-    "modelo": "Kyrie 4 'Confetti' Purple and Yellow (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/kyrie4confepedido.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P002",
-    "marca": "Nike",
-    "modelo": "Ja Morant 3  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/ja3pedidomint.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P003",
-    "marca": "Nike",
-    "modelo": "Ja Morant 3  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/ja3pet03.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P004",
-    "marca": "Nike",
-    "modelo": "Ja Morant 3  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/ja3pedi04.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P005",
-    "marca": "Nike",
-    "modelo": "Ja Morant 3  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/japedi05.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P006",
-    "marca": "Puma",
-    "modelo": "Lamelo Ball 4 (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/pumalamelopedi01.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P007",
-    "marca": "Adidas",
-    "modelo": "Anthony Edwars 2 (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/ae2pedi01.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P008",
-    "marca": "Nike",
-    "modelo": "Nike kyrie 5 'Bob Sponge'  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/kyriebobespongepedi.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P009",
-    "marca": "Nike",
-    "modelo": "Luka Doncic 3  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/luka3morpedi.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P010",
-    "marca": "Nike",
-    "modelo": "LeBron 23  (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/lebron23pedioo.jpg",
-    "tipo": "pedido"
-  },
-  {
-    "id": "P011",
-    "marca": "Nike",
-    "modelo": "Lamelo Ball 5 (Bajo pedido)",
-    "tallas": [40, 41, 42, 43, 44, 45],
-    "estado": "Bajo pedido",
-    "precio": 0,
-    "imagen": "imagenes/lameloball05peci.jpg",
-    "tipo": "pedido"
   }
+
 ]
