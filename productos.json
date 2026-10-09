@@ -1,14 +1,80 @@
 [
   {
     "id": "DV-087",
-    "modelo": "Ja Morant 3  'Spooky Season'",
+    "modelo": "Kyrie 7 'Sisterhood'",
     "marca": "Nike",
     "precio": 0,
-    "tallas": [43],
-    "imagen": "imagenes/ja3spkyzombiegreen43.jpg",
+    "tallas": [44],
+    "imagen": "imagenes/kyrie744smoood.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kevin Durand Trey 5 IX 'Bionic Rose Graffiti'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [41],
+    "imagen": "imagenes/kdrosegrafitrey5ixtail41.jpg",
     "nuevo": true,
     "estado": "9.8/10"
   },
+  {
+    "id": "DV-087",
+    "modelo": "D.O.N. Issue #3 x Bel-Air Athletics 'The Blazer'",
+    "marca": "Nike",
+    "precio": 160,
+    "tallas": [42],
+    "imagen": "imagenes/donissue3xwillsmit42.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Air Jordan 36 'Black Infared'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42],
+    "imagen": "imagenes/jordan36balckinfered42.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Zoom Freak 3 'Project 34'",
+    "marca": "Nike",
+    "precio": 115,
+    "tallas": [43],
+    "imagen": "imagenes/zoomfreakdetailtail43.jpg",
+    "nuevo": true,
+    "estado": "9.5/10",
+    "tieneDetalle": true
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Giannis Immortality 3 '5 THE HARD WAY' ",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [43],
+    "imagen": "imagenes/giannis35thenosedtal43.jpg",
+    "nuevo": true,
+    "estado": "9.3/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "PG 4 'USA'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42.5],
+    "imagen": "imagenes/pg4usatail42ymedio.jpg",
+    "nuevo": true,
+    "estado": "9.7/10"
+  },
+
+
+
+
+
   {
     "id": "DV-087",
     "modelo": "Kyrie Infinity 'Mother Nature & Father Time'",
@@ -26,18 +92,8 @@
     "precio": 115,
     "tallas": [39],
     "imagen": "imagenes/wayofwadeall11tail39.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Ja Morant 3  'Hustle & Flow'",
-    "marca": "Nike",
-    "precio": 0,
-    "tallas": [42],
-    "imagen": "imagenes/ja3doblecolor42.jpg",
-    "nuevo": true,
-    "estado": "9.9/10"
   },
   {
     "id": "DV-087",
@@ -46,21 +102,9 @@
     "precio": 135,
     "tallas": [42],
     "imagen": "imagenes/curry12tail42doblel.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.7/10"
   },
-  {
-    "id": "DV-087",
-    "modelo": "Kevin Durand Trey 5 X 'Light Orewood Brown'",
-    "marca": "Nike",
-    "precio": 125,
-    "tallas": [40],
-    "imagen": "imagenes/kdtrex5tail40.jpg",
-    "nuevo": true,
-    "estado": "9/10"
-  },
-
-
   {
     "id": "DV-087",
     "modelo": "LeBron 14 'Lakers'",
@@ -68,7 +112,7 @@
     "precio": 130,
     "tallas": [40.5],
     "imagen": "imagenes/lebron40ymediolakers.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -78,7 +122,7 @@
     "precio": 130,
     "tallas": [42],
     "imagen": "imagenes/kyrie5lowdomines.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -88,7 +132,7 @@
     "precio": 130,
     "tallas": [44],
     "imagen": "imagenes/kyrieinfinite260944.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -98,7 +142,7 @@
     "precio": 130,
     "tallas": [43],
     "imagen": "imagenes/kyrieantencymasconser43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -108,7 +152,7 @@
     "precio": 120,
     "tallas": [43],
     "imagen": "imagenes/hardenvol34313.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -118,7 +162,7 @@
     "precio": 120,
     "tallas": [43],
     "imagen": "imagenes/jordan5take43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
 {
@@ -128,7 +172,7 @@
     "precio": 90, 
     "tallas": [43],
     "imagen": "imagenes/kyrie5detailanikea43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10",
     "tieneDetalle": true
   },
@@ -729,17 +773,6 @@
     "estado": "9.7/10"
   },
   {
-    "id": "DV-018",
-    "modelo": "Kyrie Infinity 'Fire and Ice'",
-    "marca": "Nike",
-    "precio": 120,
-    "precioAnterior":135,
-    "tallas": [40],
-    "imagen": "imagenes/infinitfire.jpg",
-    "nuevo": false,
-    "estado": ""
-  },
-  {
     "id": "DV-017",
     "modelo": "Kobe 5 Protro '2K Gamer'",
     "marca": "Nike",
@@ -792,17 +825,6 @@
     "precioAnterior":120,
     "tallas": [40],
     "imagen": "imagenes/kyriefly4mango.jpg",
-    "nuevo": false,
-    "estado": "9.5/10"
-  },
-  {
-    "id": "DV-011",
-    "modelo": "Ja Morant 1 'Day One'",
-    "marca": "Nike",
-    "precio": 115,
-    "precioAnterior":140,
-    "tallas": [44],
-    "imagen": "imagenes/ja1day44.jpg",
     "nuevo": false,
     "estado": "9.5/10"
   },
