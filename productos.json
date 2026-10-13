@@ -1,6 +1,111 @@
 [
   {
     "id": "DV-087",
+    "modelo": "Kobe 4 'Carpe Diem'",
+    "marca": "Nike",
+    "precio": 165,
+    "tallas": [42],
+    "imagen": "imagenes/kobecarbiantoi42.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Ja 3 'Spooky Season'",
+    "marca": "Nike",
+    "precio": 0,
+    "tallas": [41],
+    "imagen": "imagenes/ja3tail41grreen.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Ja 3 'Sound Check'",
+    "marca": "Nike",
+    "precio": 195,
+    "tallas": [41],
+    "imagen": "imagenes/ja3sounmilk41.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Anthony Edwars 1 Low 'Pink'",
+    "marca": "Adidas",
+    "precio": 190,
+    "tallas": [43],
+    "imagen": "imagenes/aelow1pink43.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Ja 3 'Spooky Season'",
+    "marca": "Nike",
+    "precio": 190,
+    "tallas": [42],
+    "imagen": "imagenes/ja3spokydetail42.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Flytrap 4 'Black White'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [42],
+    "imagen": "imagenes/kyriefly4whitblacks.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Dame 6 'Ruthless'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/dame6retoostail43.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Ja 3 'Sound Check'",
+    "marca": "Nike",
+    "precio": 195,
+    "tallas": [42],
+    "imagen": "imagenes/ja3milk42.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kevin Durand Trey 5 VIII 'White Royal'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [41],
+    "imagen": "imagenes/kdtreywiteroualñtauil41.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Jordan Jumpman Diamond Low PF 'White Mismatch' ",
+    "marca": "Nike",
+    "precio": 110,
+    "tallas": [42],
+    "imagen": "imagenes/jordiamodlow42.jpg",
+    "nuevo": true,
+    "estado": "9./10"
+  },
+
+
+
+
+
+  {
+    "id": "DV-087",
     "modelo": "Kyrie 7 'Sisterhood'",
     "marca": "Nike",
     "precio": 0,
@@ -11,16 +116,6 @@
   },
   {
     "id": "DV-087",
-    "modelo": "Kevin Durand Trey 5 IX 'Bionic Rose Graffiti'",
-    "marca": "Nike",
-    "precio": 135,
-    "tallas": [41],
-    "imagen": "imagenes/kdrosegrafitrey5ixtail41.jpg",
-    "nuevo": true,
-    "estado": "9.8/10"
-  },
-  {
-    "id": "DV-087",
     "modelo": "D.O.N. Issue #3 x Bel-Air Athletics 'The Blazer'",
     "marca": "Nike",
     "precio": 160,
@@ -28,16 +123,6 @@
     "imagen": "imagenes/donissue3xwillsmit42.jpg",
     "nuevo": true,
     "estado": "9.8/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Air Jordan 36 'Black Infared'",
-    "marca": "Nike",
-    "precio": 135,
-    "tallas": [42],
-    "imagen": "imagenes/jordan36balckinfered42.jpg",
-    "nuevo": true,
-    "estado": "9.5/10"
   },
   {
     "id": "DV-087",
@@ -70,11 +155,6 @@
     "nuevo": true,
     "estado": "9.7/10"
   },
-
-
-
-
-
   {
     "id": "DV-087",
     "modelo": "Kyrie Infinity 'Mother Nature & Father Time'",
