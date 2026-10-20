@@ -1,6 +1,81 @@
 [
   {
     "id": "DV-087",
+    "modelo": "Kyrie 6 'Shot Clock'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42.5],
+    "imagen": "imagenes/kyriegamer42ymediotail.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Amethyst Wave'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42],
+    "imagen": "imagenes/infinityantensi42new.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie 8 'Oreo'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [41],
+    "imagen": "imagenes/kyrie8blackwhitetail41.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "PG 5 'Black Gold'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42],
+    "imagen": "imagenes/Pg5blackwhitetail42.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Jordan React Elevation",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [44],
+    "imagen": "imagenes/jordanelevationtail44.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Fire and Ice'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42.5],
+    "imagen": "imagenes/infinitifireanicetail42medion.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "LeBron 14 'Bred'",
+    "marca": "Nike",
+    "precio": 130,
+    "tallas": [44],
+    "imagen": "imagenes/lebron14bretail44.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+
+
+
+
+
+  {
+    "id": "DV-087",
     "modelo": "Kobe 4 'Carpe Diem'",
     "marca": "Nike",
     "precio": 165,
@@ -18,36 +93,6 @@
     "imagen": "imagenes/ja3tail41grreen.jpg",
     "nuevo": true,
     "estado": "9.9/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Ja 3 'Sound Check'",
-    "marca": "Nike",
-    "precio": 195,
-    "tallas": [41],
-    "imagen": "imagenes/ja3sounmilk41.jpg",
-    "nuevo": true,
-    "estado": "9.9/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Anthony Edwars 1 Low 'Pink'",
-    "marca": "Adidas",
-    "precio": 190,
-    "tallas": [43],
-    "imagen": "imagenes/aelow1pink43.jpg",
-    "nuevo": true,
-    "estado": "9.9/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Ja 3 'Spooky Season'",
-    "marca": "Nike",
-    "precio": 190,
-    "tallas": [42],
-    "imagen": "imagenes/ja3spokydetail42.jpg",
-    "nuevo": true,
-    "estado": "9/10"
   },
   {
     "id": "DV-087",
@@ -71,16 +116,6 @@
   },
   {
     "id": "DV-087",
-    "modelo": "Ja 3 'Sound Check'",
-    "marca": "Nike",
-    "precio": 195,
-    "tallas": [42],
-    "imagen": "imagenes/ja3milk42.jpg",
-    "nuevo": true,
-    "estado": "9.9/10"
-  },
-  {
-    "id": "DV-087",
     "modelo": "Kevin Durand Trey 5 VIII 'White Royal'",
     "marca": "Nike",
     "precio": 130,
@@ -96,14 +131,9 @@
     "precio": 110,
     "tallas": [42],
     "imagen": "imagenes/jordiamodlow42.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9./10"
   },
-
-
-
-
-
   {
     "id": "DV-087",
     "modelo": "Kyrie 7 'Sisterhood'",
@@ -111,18 +141,8 @@
     "precio": 0,
     "tallas": [44],
     "imagen": "imagenes/kyrie744smoood.jpg",
-    "nuevo": true,
+    "nuevo":false,
     "estado": "9.5/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "D.O.N. Issue #3 x Bel-Air Athletics 'The Blazer'",
-    "marca": "Nike",
-    "precio": 160,
-    "tallas": [42],
-    "imagen": "imagenes/donissue3xwillsmit42.jpg",
-    "nuevo": true,
-    "estado": "9.8/10"
   },
   {
     "id": "DV-087",
@@ -131,7 +151,7 @@
     "precio": 115,
     "tallas": [43],
     "imagen": "imagenes/zoomfreakdetailtail43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10",
     "tieneDetalle": true
   },
@@ -142,7 +162,7 @@
     "precio": 135,
     "tallas": [43],
     "imagen": "imagenes/giannis35thenosedtal43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.3/10"
   },
   {
@@ -152,18 +172,8 @@
     "precio": 135,
     "tallas": [42.5],
     "imagen": "imagenes/pg4usatail42ymedio.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.7/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Kyrie Infinity 'Mother Nature & Father Time'",
-    "marca": "Nike",
-    "precio": 140,
-    "tallas": [42.5],
-    "imagen": "imagenes/kyrieinfinitytail42ymediofloral.jpg",
-    "nuevo": true,
-    "estado": "9.8/10"
   },
   {
     "id": "DV-087",
@@ -187,7 +197,7 @@
   },
   {
     "id": "DV-087",
-    "modelo": "LeBron 14 'Lakers'",
+    "modelo": "LeBron Soldier 14 'Lakers'",
     "marca": "Nike",
     "precio": 130,
     "tallas": [40.5],
@@ -314,16 +324,6 @@
     "tallas": [40],
     "imagen": "imagenes/jieao3940.jpg",
     "nuevo": false,
-    "estado": "9/10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Kyrie 4 'Año Nuevo Chino 2018'",
-    "marca": "Nike",
-    "precio": 130,
-    "tallas": [43],
-    "imagen": "imagenes/kyrie4anochino43.jpg",
-    "nuevo":false,
     "estado": "9/10"
   },
   {
@@ -478,17 +478,6 @@
     "imagen": "imagenes/badfive343.jpg",
     "nuevo": false,
     "estado": "9.8/10"
-  },
-  {
-    "id": "DV-062",
-    "modelo": "Klay Thompson 4 'Klay Area'",
-    "marca": "Anta",
-    "precio": 100,
-    "precioAnterior":130,
-    "tallas": [43],
-    "imagen": "imagenes/klay4arena43.jpg",
-    "nuevo": false,
-    "estado": "9.6/10"
   },
   {
     "id": "DV-061",
