@@ -1,6 +1,91 @@
 [
   {
     "id": "DV-087",
+    "modelo": "Kobe 11 Elite Low 'Custom NikeId'",
+    "marca": "Nike",
+    "precio": 0,
+    "tallas": [42],
+    "imagen": "imagenes/kobe11idtail42.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Jordan Luka 3 'Photo Finish'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42],
+    "imagen": "imagenes/luka3tail42finish.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "G.T. Cut Academy 01 EP 'CHBL-Home'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [43],
+    "imagen": "imagenes/gtcutacademy1tail43.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kyrie Infinity 'Mother Nature & Father Time'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [43],
+    "imagen": "imagenes/kyrierfloraltail43.jpg",
+    "nuevo": true,
+    "estado": "9/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kevin Durand 12 'University Red'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [42.5],
+    "imagen": "imagenes/kd12univeritail42medio.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Dame 6 'White and Red'",
+    "marca": "Adidas",
+    "precio": 135,
+    "tallas": [41],
+    "imagen": "imagenes/dame6whiteredtail41.jpg",
+    "nuevo": true,
+    "estado": "9.8/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Kobe A.D. 'Black Toe'",
+    "marca": "Nike",
+    "precio": 135,
+    "tallas": [43],
+    "imagen": "imagenes/kobeaddedotail43.jpg",
+    "nuevo": true,
+    "estado": "9.5/10"
+  },
+  {
+    "id": "DV-087",
+    "modelo": "Curry 6 'Heart of the Town'",
+    "marca": "Under Armour",
+    "precio": 130,
+    "tallas": [43],
+    "imagen": "imagenes/curry6heartredtail43.jpg",
+    "nuevo": true,
+    "estado": "9.9/10"
+  },  
+
+
+
+
+
+  {
+    "id": "DV-087",
     "modelo": "Kyrie 6 'Shot Clock'",
     "marca": "Nike",
     "precio": 135,
@@ -31,16 +116,6 @@
   },
   {
     "id": "DV-087",
-    "modelo": "PG 5 'Black Gold'",
-    "marca": "Nike",
-    "precio": 135,
-    "tallas": [42],
-    "imagen": "imagenes/Pg5blackwhitetail42.jpg",
-    "nuevo": true,
-    "estado": "9.5/10"
-  },
-  {
-    "id": "DV-087",
     "modelo": "Jordan React Elevation",
     "marca": "Nike",
     "precio": 130,
@@ -66,14 +141,9 @@
     "precio": 130,
     "tallas": [44],
     "imagen": "imagenes/lebron14bretail44.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.8/10"
   },
-
-
-
-
-
   {
     "id": "DV-087",
     "modelo": "Kobe 4 'Carpe Diem'",
@@ -81,7 +151,7 @@
     "precio": 165,
     "tallas": [42],
     "imagen": "imagenes/kobecarbiantoi42.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.5/10"
   },
   {
@@ -91,7 +161,7 @@
     "precio": 0,
     "tallas": [41],
     "imagen": "imagenes/ja3tail41grreen.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9.9/10"
   },
   {
@@ -101,7 +171,7 @@
     "precio": 130,
     "tallas": [42],
     "imagen": "imagenes/kyriefly4whitblacks.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -111,7 +181,7 @@
     "precio": 130,
     "tallas": [43],
     "imagen": "imagenes/dame6retoostail43.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -121,7 +191,7 @@
     "precio": 130,
     "tallas": [41],
     "imagen": "imagenes/kdtreywiteroualñtauil41.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "estado": "9/10"
   },
   {
@@ -133,16 +203,6 @@
     "imagen": "imagenes/jordiamodlow42.jpg",
     "nuevo": false,
     "estado": "9./10"
-  },
-  {
-    "id": "DV-087",
-    "modelo": "Kyrie 7 'Sisterhood'",
-    "marca": "Nike",
-    "precio": 0,
-    "tallas": [44],
-    "imagen": "imagenes/kyrie744smoood.jpg",
-    "nuevo":false,
-    "estado": "9.5/10"
   },
   {
     "id": "DV-087",
@@ -254,17 +314,6 @@
     "imagen": "imagenes/jordan5take43.jpg",
     "nuevo": false,
     "estado": "9/10"
-  },
-{
-    "id": "DV-087",
-    "modelo": "Kyrie 5 'Have a Nike Day'",
-    "marca": "Nike",
-    "precio": 90, 
-    "tallas": [43],
-    "imagen": "imagenes/kyrie5detailanikea43.jpg",
-    "nuevo": false,
-    "estado": "9/10",
-    "tieneDetalle": true
   },
   {
     "id": "DV-087",
@@ -423,16 +472,6 @@
     "precio": 110,
     "tallas": [42],
     "imagen": "imagenes/foompis42.jpg",
-    "nuevo": false,
-    "estado": "8/10"
-  },
-  {
-    "id": "DV-071",
-    "modelo": "D'Rose 9 Geek UP 'Bred'",
-    "marca": "Adidas",
-    "precio": 95,
-    "tallas": [41],
-    "imagen": "imagenes/derrose41gek.jpg",
     "nuevo": false,
     "estado": "8/10"
   },
@@ -609,17 +648,6 @@
     "imagen": "imagenes/klay3whblue42.jpg",
     "nuevo": false,
     "estado": "9/10"
-  },
-  {
-    "id": "DV-045",
-    "modelo": "D.O.N Issue 4 X XBOX ",
-    "marca": "Adidas",
-    "precio": 120,
-    "precioAnterior":145,
-    "tallas": [40],
-    "imagen": "imagenes/donissue4xbox.jpg",
-    "nuevo": false,
-    "estado": "9.8/10"
   },
   {
     "id": "DV-044",
